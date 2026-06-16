@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AK Tech | Premium Computer Repairs, Custom Builds & App Development</title>
+    <meta name="description" content="Professional diagnostics, laptop/PC repairs, custom high-performance PC builds, operating system software optimization, and custom full-stack app development by AK Tech.">
+    <meta name="keywords" content="AK Tech, computer repair, custom gaming PC, software optimization, custom app development, motherboard soldering, tech support, Web3Forms contact">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+    
+    <!-- Google Fonts: Outfit & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons for modern icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body class="dark-theme">
+
+    <!-- Header / Navigation Bar -->
+    <header class="main-header">
+        <div class="container nav-container">
+            <a href="#" class="logo-area">
+                <img src="images/logo.png" alt="AK Tech Logo" class="nav-logo">
+                <span class="logo-text">AK <span class="accent-text">TECH</span></span>
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link active" data-i18n="nav_home">Home</a></li>
+                    <li><a href="#repair" class="nav-link" data-i18n="nav_repairs">Repairs</a></li>
+                    <li><a href="#sales" class="nav-link" data-i18n="nav_sales">Sales & Custom</a></li>
+                    <li><a href="#software" class="nav-link" data-i18n="nav_software">Software Opt</a></li>
+                    <li><a href="#appdev" class="nav-link" data-i18n="nav_appdev">App Dev</a></li>
+                    <li><a href="#contact" class="nav-link contact-btn-link" data-i18n="nav_contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="nav-actions">
+                <!-- Premium Language Toggler Switcher -->
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <span class="lang-divider">|</span>
+                    <button class="lang-btn" data-lang="bs">BS</button>
+                </div>
+                
+                <a href="#contact" class="btn btn-nav-cta" data-i18n="btn_get_quote">Get Quote</a>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section" style="background-image: url('images/hero_bg.png');">
+        <div class="hero-overlay"></div>
+        <div class="hero-grid container">
+            <div class="hero-content">
+                <div class="badge-container">
+                    <span class="hero-badge"><i class="fa-solid fa-bolt pulse-icon"></i> <span data-i18n="hero_badge_text">Future-Proof IT Solutions</span></span>
+                </div>
+                <h1 class="hero-title" data-i18n="hero_title">
+                    We Engineer <span class="gradient-text">Performance</span> & <span class="gradient-text secondary-gradient">Innovation</span>
+                </h1>
+                <p class="hero-desc" data-i18n="hero_desc">
+                    AK Tech delivers professional hardware micro-repairs, high-performance custom computer rigs, deep operating system tuning, and robust bespoke applications. Your digital architecture, optimized.
+                </p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary btn-glow" data-i18n="hero_btn_book">Book a Service</a>
+                    <a href="#repair" class="btn btn-secondary"><span data-i18n="hero_btn_explore">Explore Solutions</span> <i class="fa-solid fa-arrow-down"></i></a>
+                </div>
+                <div class="hero-socials">
+                    <a href="#" target="_blank" class="social-icon-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" target="_blank" class="social-icon-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" target="_blank" class="social-icon-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="hero-visual-card">
+                <div class="glass-card hero-metrics-card">
+                    <div class="metrics-header">
+                        <span class="status-indicator"><span class="pulse-dot"></span> <span data-i18n="status_active">Online Diagnostics Active</span></span>
+                        <i class="fa-solid fa-server color-cyan"></i>
+                    </div>
+                    <div class="metrics-body">
+                        <div class="metric-item">
+                            <span class="metric-title" data-i18n="metric_success_title">Success Rate</span>
+                            <span class="metric-value">99.8%</span>
+                            <div class="metric-bar"><div class="bar-fill cyan-fill" style="width: 99.8%;"></div></div>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-title" data-i18n="metric_repairs_title">Hardware Repairs Complete</span>
+                            <span class="metric-value">1,420+</span>
+                            <div class="metric-bar"><div class="bar-fill purple-fill" style="width: 85%;"></div></div>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-title" data-i18n="metric_fps_title">Optimized FPS Boost</span>
+                            <span class="metric-value">Up to 45%</span>
+                            <div class="metric-bar"><div class="bar-fill green-fill" style="width: 92%;"></div></div>
+                        </div>
+                    </div>
+                    <div class="metrics-footer">
+                        <span><i class="fa-solid fa-shield-halved"></i> <span data-i18n="metric_certified">Certified Diagnostics</span></span>
+                        <a href="#contact" class="chat-trigger-link"><span data-i18n="metric_chat">Start Chat</span> <i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Container Wrapper -->
+    <main class="services-wrapper">
+        
+        <!-- Section 1: Repair Laptop and PC -->
+        <section id="repair" class="service-section" style="background-image: url('images/repair_bg.png');">
+            <div class="section-overlay"></div>
+            <div class="container section-container">
+                <div class="section-card-wrapper">
+                    <div class="glass-card service-content-card border-glow-cyan">
+                        <div class="card-icon-header">
+                            <div class="icon-circle glow-bg-cyan">
+                                <i class="fa-solid fa-screwdriver-wrench text-glow-cyan"></i>
+                            </div>
+                            <span class="service-subtitle" data-i18n="rep_subtitle">Hardware diagnostics & micro-repairs</span>
+                        </div>
+                        <h2 class="service-title" data-i18n="rep_title">Repair Laptop & PC</h2>
+                        <p class="service-desc" data-i18n="rep_desc">
+                            High-precision diagnostic testing and board-level hardware repairs. We utilize state-of-the-art diagnostic gear and microscope stations for advanced repairs. Don't throw away broken hardware—we breathe life back into logic boards and microelectronics.
+                        </p>
+                        <ul class="checklist">
+                            <li><span class="chk-icon"><i class="fa-solid fa-check"></i></span> <span data-i18n="rep_chk1">Full Microscopic Hardware Diagnostics</span></li>
+                            <li><span class="chk-icon"><i class="fa-solid fa-check"></i></span> <span data-i18n="rep_chk2">BGA Chip Soldering & Screen Replacements</span></li>
+                            <li><span class="chk-icon"><i class="fa-solid fa-check"></i></span> <span data-i18n="rep_chk3">Deep Thermal Repasting & Liquid Cleaning</span></li>
+                        </ul>
+                        <div class="card-actions">
+                            <a href="#contact" class="btn btn-primary btn-glow btn-cyan" onclick="setServiceInquiry('Repair')" data-i18n="rep_btn">Get Diagnostic Quote</a>
+                            <span class="service-info-badge"><i class="fa-solid fa-clock"></i> <span data-i18n="rep_badge">Same-Day Service Available</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Sales & Custom Builds -->
+        <section id="sales" class="service-section" style="background-image: url('images/sales_bg.png');">
+            <div class="section-overlay"></div>
+            <div class="container section-container">
+                <div class="section-card-wrapper right-align-wrapper">
+                    <div class="glass-card service-content-card border-glow-purple">
+                        <div class="card-icon-header">
+                            <div class="icon-circle glow-bg-purple">
+                                <i class="fa-solid fa-computer text-glow-purple"></i>
+                            </div>
+                            <span class="service-subtitle" data-i18n="sal_subtitle">Custom workstations & gaming desktops</span>
+                        </div>
+                        <h2 class="service-title" data-i18n="sal_title">Sales & Custom Builds</h2>
+                        <p class="service-desc" data-i18n="sal_desc">
+                            We assemble high-performance workstation and gaming computer rigs optimized specifically for rendering, editing, high-end 3D modeling, and ultra-smooth gaming frame rates. We also source premium new and certified used business laptops.
+                        </p>
+                        <ul class="checklist">
+                            <li><span class="chk-icon"><i class="fa-solid fa-check"></i></span> <span data-i18n="sal_chk1">Custom Water-Cooled Gaming Systems</span></li>
+                            <li><span class="chk-icon"><i class="fa-solid fa-check"></i></span> <span data-i18n="sal_chk2">High-End Workstation Laptops (New & Used)</span></li>
+                            <li><span class="chk-icon"><i class="fa-solid fa-check"></i></span> <span data-i18n="sal_chk3">Solid-State Drive (SSD) & RAM Expansions</span></li>
+                        </ul>
+                        <div class="card-actions">
+                            <a href="#contact" class="btn btn-primary btn-glow btn-purple" onclick="setServiceInquiry('Sales')" data-i18n="sal_btn">Request Custom Build Quote</a>
+                            <span class="service-info-badge"><i class="fa-solid fa-medal"></i> <span data-i18n="sal_badge">2-Year Rig Hardware Warranty</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Software Optimization -->
+        <section id="software" class="service-section" style="background-image: url('images/software_bg.png');">
+            <div class="section-overlay"></div>
+            <div class="container section-container">
+                <div class="section-card-wrapper">
+                    <div class="glass-card service-content-card border-glow-green">
+                        <div class="card-icon-header">
+                            <div class="icon-circle glow-bg-green">
+                                <i class="fa-solid fa-gauge-high text-glow-green"></i>
+                            </div>
+                            <span class="service-subtitle" data-i18n="soft_subtitle">Operating system config & peak performance</span>
+                        </div>
+                        <h2 class="service-title" data-i18n="soft_title">Software Optimization</h2>
+                        <p class="service-desc" data-i18n="soft_desc">
+                            Transform your slow computer back into a speed demon. We perform deep kernel-level system optimization, secure background malware extraction, correct malfunctioning drivers, and design automated backup structures.
+                        </p>
+                        <ul class="checklist">
+                            <li><span class="chk-icon"><i class="fa-solid fa-check"></i></span> <span data-i18n="soft_chk1">Clean OS Installation & Drivers Patching (Windows/Linux)</span></li>
+                            <li><span class="chk-icon"><i class="fa-solid fa-check"></i></span> <span data-i18n="soft_chk2">Rootkit, Malware & Background Bloatware Removal</span></li>
+                            <li><span class="chk-icon"><i class="fa-solid fa-check"></i></span> <span data-i18n="soft_chk3">Lost File Recovery & Secure Multi-Layer Backups</span></li>
+                        </ul>
+                        <div class="card-actions">
+                            <a href="#contact" class="btn btn-primary btn-glow btn-green" onclick="setServiceInquiry('Software')" data-i18n="soft_btn">Speed Up My System</a>
+                            <span class="service-info-badge"><i class="fa-solid fa-rocket"></i> <span data-i18n="soft_badge">Average 35% Boot Speed Up</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Custom App Development -->
+        <section id="appdev" class="service-section" style="background-image: url('images/dev_bg.png');">
+            <div class="section-overlay"></div>
+            <div class="container section-container">
+                <div class="section-card-wrapper right-align-wrapper">
+                    <div class="glass-card service-content-card border-glow-yellow">
+                        <div class="card-icon-header">
+                            <div class="icon-circle glow-bg-yellow">
+                                <i class="fa-solid fa-code text-glow-yellow"></i>
+                            </div>
+                            <span class="service-subtitle" data-i18n="dev_subtitle">Full-stack web & customized applications</span>
+                        </div>
+                        <h2 class="service-title" data-i18n="dev_title">Custom App Development</h2>
+                        <p class="service-desc" data-i18n="dev_desc">
+                            We architect high-quality, high-speed customized web, desktop, and mobile solutions tailored directly to your operational workflows. From intuitive responsive frontend UI designs to scalable databases, we turn complex processes into simple, secure logic.
+                        </p>
+                        <ul class="checklist">
+                            <li><span class="chk-icon"><i class="fa-solid fa-check"></i></span> <span data-i18n="dev_chk1">Web-Based POS, CRM, and Custom Database Portals</span></li>
+                            <li><span class="chk-icon"><i class="fa-solid fa-check"></i></span> <span data-i18n="dev_chk2">Modern Mobile Apps with Elegant Glassmorphic UI</span></li>
+                            <li><span class="chk-icon"><i class="fa-solid fa-check"></i></span> <span data-i18n="dev_chk3">API Engineering, Integrations & Automation Tasks</span></li>
+                        </ul>
+                        <div class="card-actions">
+                            <a href="#contact" class="btn btn-primary btn-glow btn-yellow" onclick="setServiceInquiry('AppDev')" data-i18n="dev_btn">Discuss Application Idea</a>
+                            <span class="service-info-badge"><i class="fa-solid fa-laptop-code"></i> <span data-i18n="dev_badge">Complete Source Control Included</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Contact Section with Web3Forms -->
+    <section id="contact" class="contact-section">
+        <div class="contact-grid container">
+            
+            <!-- Contact Left Side Content -->
+            <div class="contact-info-panel">
+                <div class="badge-container">
+                    <span class="hero-badge"><i class="fa-solid fa-headset pulse-icon"></i> <span data-i18n="contact_badge_text">Contact support</span></span>
+                </div>
+                <h2 class="contact-panel-title" data-i18n="contact_title">Let's Discuss <br><span class="gradient-text">Your Next Project</span></h2>
+                <p class="contact-panel-desc" data-i18n="contact_desc">
+                    Need urgent hardware diagnostic service? Or preparing an exciting app development roadmap? Fill out the contact form, and our tech team will reply with custom proposals within a business day.
+                </p>
+                
+                <div class="direct-contact-channels">
+                    <div class="channel-card">
+                        <div class="channel-icon glow-bg-cyan"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="channel-detail">
+                            <span class="channel-label" data-i18n="channel_email">Email Support</span>
+                            <a href="mailto:support@aktech.work" class="channel-value">support@aktech.work</a>
+                        </div>
+                    </div>
+                    
+                    <div class="channel-card">
+                        <div class="channel-icon glow-bg-green"><i class="fa-brands fa-whatsapp"></i></div>
+                        <div class="channel-detail">
+                            <span class="channel-label" data-i18n="channel_whatsapp">WhatsApp Live Chat</span>
+                            <a href="https://wa.me/38760000000" target="_blank" class="channel-value">+387 60 000 000</a>
+                        </div>
+                    </div>
+                    
+                    <div class="channel-card">
+                        <div class="channel-icon glow-bg-purple"><i class="fa-brands fa-viber"></i></div>
+                        <div class="channel-detail">
+                            <span class="channel-label" data-i18n="channel_viber">Viber Hotline</span>
+                            <a href="viber://chat?number=%2B38760000000" class="channel-value">+387 60 000 000</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact Right Side Form (Web3Forms) -->
+            <div class="contact-form-panel">
+                <div class="glass-card form-container-card">
+                    <!-- Web3Forms Form Configuration -->
+                    <form action="https://api.web3forms.com/submit" method="POST" id="contactForm" class="ak-tech-form">
+                        
+                        <!-- Replace with your actual Web3Forms Access Key -->
+                        <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY_HERE">
+                        <input type="hidden" name="subject" value="New Service Request - AK Tech Site">
+                        <input type="checkbox" name="botcheck" id="" style="display: none;">
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="formName" data-i18n="lbl_name"><i class="fa-solid fa-user"></i> Full Name</label>
+                                <input type="text" id="formName" name="name" placeholder="John Doe" required class="form-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="formEmail" data-i18n="lbl_email"><i class="fa-solid fa-envelope"></i> Email Address</label>
+                                <input type="email" id="formEmail" name="email" placeholder="john@example.com" required class="form-input">
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="formSubject" data-i18n="lbl_subject"><i class="fa-solid fa-heading"></i> Subject</label>
+                                <input type="text" id="formSubject" name="custom_subject" placeholder="Urgent Repair / Custom Build Inquiry" required class="form-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="formService" data-i18n="lbl_service"><i class="fa-solid fa-circle-info"></i> Desired Service</label>
+                                <select id="formService" name="service_type" required class="form-input form-select">
+                                    <option value="" disabled selected data-i18n="select_default">Select a service...</option>
+                                    <option value="repair" data-i18n="select_repair">Repair Laptop & PC</option>
+                                    <option value="sales" data-i18n="select_sales">Sales & Custom Builds</option>
+                                    <option value="software" data-i18n="select_software">Software Optimization</option>
+                                    <option value="appdev" data-i18n="select_appdev">Custom App Development</option>
+                                    <option value="general" data-i18n="select_general">General Support / Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="formMessage" data-i18n="lbl_message"><i class="fa-solid fa-message"></i> Detailed Message</label>
+                            <textarea id="formMessage" name="message" rows="5" placeholder="Please describe what service you require or details of your technology issues..." required class="form-input form-textarea"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-submit-glow" data-i18n="btn_send">
+                            Send Secure Request <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                        
+                        <div id="formResponse" class="form-response-msg"></div>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <a href="#" class="footer-logo">
+                    <img src="images/logo.png" alt="AK Tech Logo" class="footer-logo-img">
+                    <span class="logo-text">AK <span class="accent-text">TECH</span></span>
+                </a>
+                <p class="footer-bio" data-i18n="footer_bio">
+                    State-of-the-art computer diagnostics, precision microscopic motherboard repairs, high-fidelity gaming systems, clean software optimizations, and highly robust custom applications.
+                </p>
+                <div class="footer-contact-details">
+                    <span><i class="fa-solid fa-phone"></i> +387 60 000 000</span>
+                    <span><i class="fa-solid fa-envelope"></i> info@aktech.work</span>
+                </div>
+            </div>
+            
+            <div class="footer-nav">
+                <h3 class="footer-heading" data-i18n="footer_heading_services">Services</h3>
+                <ul class="footer-links">
+                    <li><a href="#repair" data-i18n="footer_link_repair">Laptop & PC Repair</a></li>
+                    <li><a href="#sales" data-i18n="footer_link_sales">Custom PC Assemblies</a></li>
+                    <li><a href="#software" data-i18n="footer_link_software">Software Optimization</a></li>
+                    <li><a href="#appdev" data-i18n="footer_link_appdev">Custom Development</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-nav">
+                <h3 class="footer-heading" data-i18n="footer_heading_navigation">Navigation</h3>
+                <ul class="footer-links">
+                    <li><a href="#hero" data-i18n="footer_nav_home">Home</a></li>
+                    <li><a href="#repair" data-i18n="footer_nav_solutions">Core Solutions</a></li>
+                    <li><a href="#contact" data-i18n="footer_nav_contact">Contact Support</a></li>
+                    <li><a href="#contact" data-i18n="footer_nav_quote">Get Quote</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-hours">
+                <h3 class="footer-heading" data-i18n="footer_heading_hours">Business Hours</h3>
+                <ul class="hours-list">
+                    <li><span data-i18n="day_mon_fri">Monday - Friday</span> <span>08:00 AM - 06:00 PM</span></li>
+                    <li><span data-i18n="day_sat">Saturday</span> <span>09:00 AM - 04:00 PM</span></li>
+                    <li><span data-i18n="day_sun">Sunday</span> <span class="closed-label" data-i18n="closed">Closed</span></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-copyright container">
+            <p data-i18n="copyright">&copy; 2026 AK Tech. All Rights Reserved. Designed & Engineered with premium responsive glassmorphism.</p>
+            <div class="footer-social-links">
+                <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Quick Support Badge Widget (Almir Reference Style) -->
+    <div class="floating-support-bar">
+        <a href="https://wa.me/38760000000" target="_blank" class="float-item float-whatsapp" title="WhatsApp Chat">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="float-label"><strong data-i18n="channel_whatsapp">WhatsApp Chat</strong><br><span data-i18n="float_wa_desc">Replies in minutes</span></span>
+        </a>
+        <a href="viber://chat?number=%2B38760000000" class="float-item float-viber" title="Viber Support">
+            <i class="fa-brands fa-viber"></i>
+            <span class="float-label"><strong data-i18n="channel_viber">Viber Support</strong><br><span data-i18n="float_viber_desc">Instant message</span></span>
+        </a>
+        <a href="tel:+38760000000" class="float-item float-call" title="Call Direct">
+            <i class="fa-solid fa-phone"></i>
+            <span class="float-label"><strong>Call Direct</strong><br><span data-i18n="float_call_desc">Available 8 AM - 6 PM</span></span>
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script/translations.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>
