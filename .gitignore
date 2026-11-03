@@ -1,0 +1,22 @@
+# AK TECH - Git Ignore Rules
+
+# User working planning, drafts and configuration text files
+*.txt
+!robots.txt
+!downloads/README.txt
+
+# Scratch and temporary testing files
+scratch/
+__pycache__/
+*.pyc
+
+# IDE & Editor configuration
+.vscode/
+.idea/
+
+# OS metadata
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store

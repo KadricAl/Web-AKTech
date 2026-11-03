@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proizvodi & Ponuda | AK Tech</title>
+    <meta name="description" content="Katalog softverskih rješenja, Gumroad digitalnih alata, provjerenih OLX računara i grupne ponude laptopa, računara, tableta i telefona.">
+    <meta name="keywords" content="gaming racunari olx bih, gumroad alati, laptopi od 250, pc racunari od 200, tableti, telefoni, ak tech ponuda">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="author" content="AK TECH">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://aktech.work/products.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aktech.work/products.html">
+    <meta property="og:title" content="Proizvodi & Hardver | AK Tech">
+    <meta property="og:description" content="Pregled digitalnih alata i provjerenih računara sa garancijom.">
+    <meta property="og:image" content="https://aktech.work/images/logo.png">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Proizvodi & Ponuda | AK Tech">
+    <meta name="twitter:description" content="Provjereni računari, laptopi i digitalni alati sa garancijom.">
+    <meta name="twitter:image" content="https://aktech.work/images/sales_bg.png">
+    
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Gumroad Overlay API -->
+    <script src="https://gumroad.com/js/gumroad.js"></script>
+    
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body class="dark-theme">
+
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo-area">
+                <img src="images/logo.png" alt="AK Tech Logo" class="nav-logo">
+                <span class="logo-text">AK <span class="accent-text">TECH</span></span>
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link" data-i18n="nav_home">Početna</a></li>
+                    
+                    <li class="nav-item-dropdown">
+                        <a href="services.html" class="nav-link dropdown-toggle-link">
+                            <span data-i18n="nav_services">Usluge</span>
+                            <i class="fa-solid fa-chevron-down dropdown-icon-chevron"></i>
+                        </a>
+                        <ul class="nav-dropdown-menu">
+                            <li><a href="services.html#desktop-dev" class="nav-dropdown-link"><i class="fa-solid fa-laptop-code"></i> Desktop Aplikacije</a></li>
+                            <li><a href="services.html#web-dev" class="nav-dropdown-link"><i class="fa-solid fa-globe"></i> Web & Landing Stranice</a></li>
+                            <li><a href="services.html#android-dev" class="nav-dropdown-link"><i class="fa-brands fa-android"></i> Android Aplikacije</a></li>
+                            <li><a href="services.html#debugging" class="nav-dropdown-link"><i class="fa-solid fa-bug-slash"></i> Debug & Fix Koda</a></li>
+                            <li><a href="services.html#photo-design" class="nav-dropdown-link"><i class="fa-solid fa-image"></i> Obrada Fotografija</a></li>
+                            <li><a href="services.html#video-social" class="nav-dropdown-link"><i class="fa-solid fa-clapperboard"></i> Video & Social Media</a></li>
+                            <li><a href="services.html#maintenance" class="nav-dropdown-link"><i class="fa-solid fa-screwdriver-wrench"></i> Servis & Održavanje</a></li>
+                            <li><a href="services.html#os-tuning" class="nav-dropdown-link"><i class="fa-solid fa-gauge-high"></i> Instalacija & Podešavanje OS</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item-dropdown">
+                        <a href="resources.html" class="nav-link dropdown-toggle-link">
+                            <span data-i18n="nav_resources">Aplikacije & Resursi</span>
+                            <i class="fa-solid fa-chevron-down dropdown-icon-chevron"></i>
+                        </a>
+                        <ul class="nav-dropdown-menu">
+                            <li><a href="resources.html" class="nav-dropdown-link"><i class="fa-solid fa-folder-open"></i> Svi Resursi & Vodiči</a></li>
+                            <li><a href="downloads.html" class="nav-dropdown-link"><i class="fa-solid fa-download"></i> Biblioteka Preuzimanja</a></li>
+                            <li><a href="resources.html#open-source" class="nav-dropdown-link"><i class="fa-solid fa-code"></i> Open-Source Programi</a></li>
+                            <li><a href="resources.html#ai-tools" class="nav-dropdown-link"><i class="fa-solid fa-wand-magic-sparkles"></i> Preporučeni AI Alati</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item-dropdown">
+                        <a href="products.html" class="nav-link active dropdown-toggle-link">
+                            <span data-i18n="nav_products">Proizvodi</span>
+                            <i class="fa-solid fa-chevron-down dropdown-icon-chevron"></i>
+                        </a>
+                        <ul class="nav-dropdown-menu">
+                            <li><a href="products.html" class="nav-dropdown-link"><i class="fa-solid fa-boxes-stacked"></i> Katalog Proizvoda</a></li>
+                            <li><a href="gumroad-products.html" class="nav-dropdown-link"><i class="fa-solid fa-store"></i> Gumroad Prodavnica</a></li>
+                            <li><a href="#olx" class="nav-dropdown-link"><i class="fa-solid fa-cart-shopping"></i> OLX Računari & Oprema</a></li>
+                            <li><a href="#group-devices" class="nav-dropdown-link"><i class="fa-solid fa-laptop"></i> Grupna Ponuda Uređaja</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="tools.html" class="nav-link" data-i18n="nav_tools">Besplatni Alati</a></li>
+                    <li><a href="index.html#projects" class="nav-link" data-i18n="nav_projects">Projekti</a></li>
+                    <li><a href="about.html" class="nav-link" data-i18n="nav_about">O nama</a></li>
+                    <li><a href="contact.html" class="nav-link contact-btn-link" data-i18n="nav_contact">Kontakt</a></li>
+                </ul>
+            </nav>
+            
+            <div class="nav-actions">
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="bs">BS</button>
+                    <span class="lang-divider">|</span>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+                <a href="contact.html" class="btn btn-nav-cta" data-i18n="btn_get_quote">Zatraži Ponudu</a>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Subpage Hero -->
+    <section class="subpage-hero">
+        <div class="container subpage-hero-content">
+            <div class="badge-container" style="justify-content: center;">
+                <span class="hero-badge"><i class="fa-solid fa-cart-shopping pulse-icon"></i> E-Commerce & Hardver</span>
+            </div>
+            <h1 class="subpage-title" data-i18n="products_page_title">Digitalni Proizvodi i <span class="gradient-text">Hardverska Ponuda</span></h1>
+            <p class="subpage-desc" data-i18n="products_page_desc">Instant softverski alati, digitalni priručnici na Gumroadu, provjereni računari i laptopi na OLX.ba i grupne ponude uređaja.</p>
+        </div>
+    </section>
+
+    <!-- Main Container -->
+    <main class="container" style="padding: 40px 20px 100px;">
+
+        <!-- 1. Featured Software / Apps -->
+        <section id="featured" style="margin-bottom: 80px;">
+            <div class="badge-container">
+                <span class="hero-badge"><i class="fa-solid fa-star"></i> AK Tech Software</span>
+            </div>
+            <h2 style="font-size: 2rem; font-weight: 800; margin: 10px 0 24px;" data-i18n="sec_featured_products">Izdvojeni Softver & Aplikacije</h2>
+            <div class="cards-grid-3" id="featuredProductsGrid">
+                <!-- Loaded from data.js -->
+            </div>
+        </section>
+
+        <!-- 2. Gumroad Products (3 items with link to Gumroad Shop) -->
+        <section id="gumroad" style="margin-bottom: 80px; padding: 48px; border-radius: var(--border-radius-lg); background: rgba(139, 92, 246, 0.03); border: 1px solid rgba(139, 92, 246, 0.15);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; flex-wrap: wrap; gap: 16px;">
+                <div>
+                    <span class="hero-badge"><i class="fa-solid fa-bolt"></i> Instant Digital Delivery</span>
+                    <h2 style="font-size: 2rem; font-weight: 800; margin-top: 10px;" data-i18n="sec_gumroad_preview">Gumroad Digitalna Prodavnica</h2>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Kupite alate i skripte direktno preko integrisanog Gumroad prozora bez napuštanja sajta.</p>
+                </div>
+                <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                    <a href="https://aktechcraft.gumroad.com/" target="_blank" class="btn btn-primary btn-glow btn-purple">
+                        <i class="fa-solid fa-store"></i> Pogledaj Sve na Gumroad Shopu <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="cards-grid-3" id="gumroadProductsGrid">
+                <!-- Loaded from data.js (3 items) -->
+            </div>
+        </section>
+
+        <!-- 3. OLX Top 4 Products -->
+        <section id="olx" style="margin-bottom: 80px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; flex-wrap: wrap; gap: 16px;">
+                <div>
+                    <span class="hero-badge"><i class="fa-solid fa-shield-halved"></i> 100% Testirano & Provjereno</span>
+                    <h2 style="font-size: 2rem; font-weight: 800; margin-top: 10px;" data-i18n="sec_olx_preview">OLX Računari, Laptopi & Komponente (Top 4)</h2>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Svi uređaji su očišćeni, detaljno testirani i dolaze sa pisanom garancijom.</p>
+                </div>
+                <a href="https://olx.ba/profil/AKTech" target="_blank" class="btn btn-secondary">
+                    <i class="fa-solid fa-cart-shopping"></i> Pogledaj Sve na OLX.ba <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+            <div class="cards-grid-4" id="olxProductsGrid">
+                <!-- Loaded from data.js (4 items) -->
+            </div>
+        </section>
+
+        <!-- 4. 4 Grupna Proizvoda (Laptopi, PC, Tableti, Telefoni) -->
+        <section id="group-devices">
+            <div class="badge-container">
+                <span class="hero-badge"><i class="fa-solid fa-boxes-stacked"></i> Grupna Hardverska Ponuda</span>
+            </div>
+            <h2 style="font-size: 2rem; font-weight: 800; margin: 10px 0 12px;">Ponuda Uređaja po Kategorijama</h2>
+            <p style="color: var(--text-muted); font-size: 0.98rem; max-width: 720px; margin-bottom: 30px;">
+                Istražite naše kategorije uređaja spremnih za rad i zabavu. Za svaki uređaj osiguravamo punu funkcionalnost, servisiran hardver i podršku.
+            </p>
+            <div class="cards-grid-4" id="groupProductsGrid">
+                <!-- Loaded from data.js (4 group cards with images) -->
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <a href="index.html" class="footer-logo">
+                    <img src="images/logo.png" alt="AK Tech Logo" class="footer-logo-img">
+                    <span class="logo-text">AK <span class="accent-text">TECH</span></span>
+                </a>
+                <p class="footer-bio" data-i18n="footer_bio">
+                    Precizna dijagnostika računara, mikroskopsko lemljenje matičnih ploča, sklapanje custom računara, optimizacija sistema i izrada softvera po mjeri.
+                </p>
+                <div class="footer-contact-details">
+                    <span><i class="fa-solid fa-phone"></i> +387 61 293 073</span>
+                    <span><i class="fa-solid fa-envelope"></i> support@aktech.work</span>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <h3 class="footer-heading" data-i18n="footer_heading_services">Katalog</h3>
+                <ul class="footer-links">
+                    <li><a href="#featured">Softver</a></li>
+                    <li><a href="#gumroad">Gumroad Alati</a></li>
+                    <li><a href="#olx">OLX Računari</a></li>
+                    <li><a href="#group-devices">Grupna Ponuda</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav">
+                <h3 class="footer-heading" data-i18n="footer_heading_navigation">Navigacija</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="services.html">Usluge</a></li>
+                    <li><a href="resources.html">Resursi</a></li>
+                    <li><a href="tools.html">Besplatni Alati</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </div>
+            <div class="footer-hours">
+                <h3 class="footer-heading" data-i18n="footer_hours">Radno Vrijeme</h3>
+                <ul class="hours-list">
+                    <li><span data-i18n="day_mon_fri">Ponedjeljak - Petak</span> <span>08:00 - 18:00</span></li>
+                    <li><span data-i18n="day_sat">Subota</span> <span>09:00 - 16:00</span></li>
+                    <li><span data-i18n="day_sun">Nedjelja</span> <span class="closed-label" data-i18n="closed">Zatvoreno</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyright container">
+            <p data-i18n="copyright">&copy; 2026 AK Tech. Sva prava zadržana.</p>
+            <div class="footer-social-links">
+                <a href="https://github.com/KadricAl" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://olx.ba/profil/AKTech" target="_blank" aria-label="OLX"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="https://aktechcraft.gumroad.com/" target="_blank" aria-label="Gumroad"><i class="fa-solid fa-bag-shopping"></i></a>
+                <a href="https://www.facebook.com/share/1A7irGQCFo/?mibextid=wwXIfr" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://youtube.com/@aktechvers?si=SF_6i_wLMFAemTBW" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/ak.tech.verse?exln=N3piMXA0NmQ5NzFv&utm_source=qr" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Support Bar -->
+    <div class="floating-support-bar">
+        <a href="https://wa.me/38761293073" target="_blank" class="float-item float-whatsapp" title="WhatsApp Chat">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="float-label"><strong data-i18n="float_wa_title">WhatsApp Chat</strong><br><span data-i18n="float_wa_desc">Odgovor u par minuta</span></span>
+        </a>
+        <a href="viber://chat?number=%2B38761293073" class="float-item float-viber" title="Viber Podrška">
+            <i class="fa-brands fa-viber"></i>
+            <span class="float-label"><strong data-i18n="float_viber_title">Viber Podrška</strong><br><span data-i18n="float_viber_desc">Brza poruka</span></span>
+        </a>
+        <a href="tel:+38761293073" class="float-item float-call" title="Pozovi Direktno">
+            <i class="fa-solid fa-phone"></i>
+            <span class="float-label"><strong data-i18n="float_call_title">Pozovi Direktno</strong><br><span data-i18n="float_call_desc">Pon - Sub 08-18h</span></span>
+        </a>
+    </div>
+
+    <script src="script/data.js"></script>
+    <script src="script/translations.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>

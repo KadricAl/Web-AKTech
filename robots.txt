@@ -1,0 +1,6 @@
+# AK TECH - Search Engine Crawlers Directive
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://aktech.work/sitemap.xml

@@ -1,198 +1,343 @@
 const translations = {
     en: {
+        // Global Navigation
         nav_home: "Home",
-        nav_repairs: "Repairs",
-        nav_sales: "Sales & Custom",
-        nav_software: "Software Opt",
-        nav_appdev: "App Dev",
+        nav_services: "Services",
+        nav_resources: "Apps & Downloads",
+        nav_products: "Products",
+        nav_projects: "Projects",
+        nav_tools: "Free Tools",
+        nav_about: "About",
         nav_contact: "Contact",
+        nav_downloads: "Downloads Library",
+        nav_gumroad: "Gumroad Store",
         btn_get_quote: "Get Quote",
+
+        // Dropdown Titles
+        dropdown_services: "Our Services",
+        dropdown_resources: "Resources & Downloads",
+        dropdown_products: "Shop & Products",
+
+        // Homepage Hero
         hero_badge_text: "Future-Proof IT Solutions",
-        hero_title: "We Engineer <span class=\"gradient-text\">Performance</span> & <span class=\"gradient-text secondary-gradient\">Innovation</span>",
-        hero_desc: "AK Tech delivers professional hardware micro-repairs, high-performance custom computer rigs, deep operating system tuning, and robust bespoke applications. Your digital architecture, optimized.",
-        hero_btn_book: "Book a Service",
-        hero_btn_explore: "Explore Solutions <i class=\"fa-solid fa-arrow-down\"></i>",
-        status_active: "<span class=\"pulse-dot\"></span> Online Diagnostics Active",
-        metric_success_title: "Success Rate",
-        metric_repairs_title: "Hardware Repairs Complete",
-        metric_fps_title: "Optimized FPS Boost",
-        metric_certified: "<i class=\"fa-solid fa-shield-halved\"></i> Certified Diagnostics",
-        metric_chat: "Start Chat <i class=\"fa-solid fa-chevron-right\"></i>",
-        
-        rep_subtitle: "Hardware diagnostics & micro-repairs",
-        rep_title: "Repair Laptop & PC",
-        rep_desc: "High-precision diagnostic testing and board-level hardware repairs. We utilize state-of-the-art diagnostic gear and microscope stations for advanced repairs. Don't throw away broken hardware—we breathe life back into logic boards and microelectronics.",
-        rep_chk1: "Full Microscopic Hardware Diagnostics",
-        rep_chk2: "BGA Chip Soldering & Screen Replacements",
-        rep_chk3: "Deep Thermal Repasting & Liquid Cleaning",
-        rep_btn: "Get Diagnostic Quote",
-        rep_badge: "<i class=\"fa-solid fa-clock\"></i> Same-Day Service Available",
-        
-        sal_subtitle: "Custom workstations & gaming desktops",
-        sal_title: "Sales & Custom Builds",
-        sal_desc: "We assemble high-performance workstation and gaming computer rigs optimized specifically for rendering, editing, high-end 3D modeling, and ultra-smooth gaming frame rates. We also source premium new and certified used business laptops.",
-        sal_chk1: "Custom Water-Cooled Gaming Systems",
-        sal_chk2: "High-End Workstation Laptops (New & Used)",
-        sal_chk3: "Solid-State Drive (SSD) & RAM Expansions",
-        sal_btn: "Request Custom Build Quote",
-        sal_badge: "<i class=\"fa-solid fa-medal\"></i> 2-Year Rig Hardware Warranty",
-        
-        soft_subtitle: "Operating system config & peak performance",
-        soft_title: "Software Optimization",
-        soft_desc: "Transform your slow computer back into a speed demon. We perform deep kernel-level system optimization, secure background malware extraction, correct malfunctioning drivers, and design automated backup structures.",
-        soft_chk1: "Clean OS Installation & Drivers Patching (Windows/Linux)",
-        soft_chk2: "Rootkit, Malware & Background Bloatware Removal",
-        soft_chk3: "Lost File Recovery & Secure Multi-Layer Backups",
-        soft_btn: "Speed Up My System",
-        soft_badge: "<i class=\"fa-solid fa-rocket\"></i> Average 35% Boot Speed Up",
-        
-        dev_subtitle: "Full-stack web & customized applications",
-        dev_title: "Custom App Development",
-        dev_desc: "We architect high-quality, high-speed customized web, desktop, and mobile solutions tailored directly to your operational workflows. From intuitive responsive frontend UI designs to scalable databases, we turn complex processes into simple, secure logic.",
-        dev_chk1: "Web-Based POS, CRM, and Custom Database Portals",
-        dev_chk2: "Modern Mobile Apps with Elegant Glassmorphic UI",
-        dev_chk3: "API Engineering, Integrations & Automation Tasks",
-        dev_btn: "Discuss Application Idea",
-        dev_badge: "<i class=\"fa-solid fa-laptop-code\"></i> Complete Source Control Included",
-        
-        contact_badge_text: "Contact support",
-        contact_title: "Let's Discuss <br><span class=\"gradient-text\">Your Next Project</span>",
-        contact_desc: "Need urgent hardware diagnostic service? Or preparing an exciting app development roadmap? Fill out the contact form, and our tech team will reply with custom proposals within a business day.",
-        channel_email: "Email Support",
-        channel_whatsapp: "WhatsApp Live Chat",
-        channel_viber: "Viber Hotline",
-        
-        lbl_name: "<i class=\"fa-solid fa-user\"></i> Full Name",
-        lbl_email: "<i class=\"fa-solid fa-envelope\"></i> Email Address",
-        lbl_subject: "<i class=\"fa-solid fa-heading\"></i> Subject",
-        lbl_service: "<i class=\"fa-solid fa-circle-info\"></i> Desired Service",
-        lbl_message: "<i class=\"fa-solid fa-message\"></i> Detailed Message",
-        btn_send: "Send Secure Request <i class=\"fa-solid fa-paper-plane\"></i>",
-        
-        select_default: "Select a service...",
-        select_repair: "Repair Laptop & PC",
-        select_sales: "Sales & Custom Builds",
-        select_software: "Software Optimization",
-        select_appdev: "Custom App Development",
-        select_general: "General Support / Other",
-        
-        footer_bio: "State-of-the-art computer diagnostics, precision microscopic motherboard repairs, high-fidelity gaming systems, clean software optimizations, and highly robust custom applications.",
+        hero_title: "Engineering <span class=\"gradient-text\">Performance</span> & <span class=\"gradient-text secondary-gradient\">Innovation</span>",
+        hero_desc: "AK Tech delivers hardware micro-repairs, high-performance workstation builds, deep system optimizations, bespoke software applications, and practical digital tools. Your digital architecture, perfected.",
+        hero_btn_services: "Explore Services",
+        hero_btn_products: "Explore Products",
+
+        // Homepage Services Grid
+        home_services_badge: "What We Do",
+        home_services_title: "Specialized <span class=\"gradient-text\">Tech Services</span>",
+        home_services_desc: "From component-level soldering to scalable web and desktop applications, we cover the full spectrum of modern hardware and software engineering.",
+        btn_view_all_services: "View All Services",
+
+        // Service Items (Home Grid)
+        srv_desktop_title: "Custom Desktop Apps",
+        srv_desktop_desc: "High-performance native Windows applications built with C# .NET and WPF with system-level integrations.",
+        srv_web_title: "Web Apps & Landing Pages",
+        srv_web_desc: "Fast, responsive web applications, modern company landing pages, and automated cloud deployments.",
+        srv_android_title: "Android App Development",
+        srv_android_desc: "Custom Android applications tailored to business operations, sensor telemetry, and POS systems.",
+        srv_debug_title: "Code Debugging & Fixing",
+        srv_debug_desc: "Fixing stubborn software bugs, performance bottlenecks, and architectural code refactoring.",
+        srv_hardware_title: "Hardware Repairs & Maintenance",
+        srv_hardware_desc: "Precision diagnostics, thermal repasting, deep dust cleaning, and component board-level micro-soldering.",
+        srv_os_title: "Software & OS Installation",
+        srv_os_desc: "Clean Windows and Linux installations, driver configuration, malware eradication, and boot optimization.",
+
+        // Homepage Products Section
+        home_products_badge: "Store & Hardware",
+        home_products_title: "Digital Products & <span class=\"gradient-text\">Hardware</span>",
+        home_products_desc: "Browse our hand-picked digital utilities on Gumroad or explore verified hardware rigs and laptops on OLX.",
+        tab_gumroad: "Gumroad Digital Store",
+        tab_olx: "OLX Hardware & Laptops",
+        btn_view_all_gumroad: "View All Gumroad Products",
+        btn_view_all_olx: "Explore All on OLX.ba",
+        btn_buy_instant: "Instant Checkout",
+        btn_order_whatsapp: "Order via WhatsApp",
+        badge_instant_download: "Instant Delivery",
+
+        // Homepage Resources & Downloads Section
+        home_resources_badge: "Free Resources",
+        home_resources_title: "Apps & <span class=\"gradient-text\">Downloads</span>",
+        home_resources_desc: "Download free maintenance handbooks, automated performance scripts, and explore top open-source tools.",
+        btn_view_all_resources: "Explore All Resources",
+        btn_download_free: "Download Free",
+
+        // Homepage Free Tools Section
+        home_tools_badge: "Free Utilities",
+        home_tools_title: "Free Online <span class=\"gradient-text\">Browser Tools</span>",
+        home_tools_desc: "Convert images, resize assets, transform PDFs, and test utilities directly in your browser with zero upload wait times.",
+        btn_view_all_tools: "Open Free Online Tools",
+
+        // Homepage Projects Section
+        home_projects_badge: "Portfolio & Engineering",
+        home_projects_title: "Featured <span class=\"gradient-text\">Software Projects</span>",
+        home_projects_desc: "Recent desktop tools, web portals, and system utilities developed with clean architecture and source control.",
+        btn_view_github: "View on GitHub",
+        btn_live_demo: "Live Preview",
+
+        // Homepage Quick CTA Section
+        home_cta_badge: "Quick Help",
+        home_cta_title: "Have a Tech Issue or <span class=\"gradient-text\">Project in Mind?</span>",
+        home_cta_desc: "Reach out directly via WhatsApp, Viber, or send us a request through our contact form. We reply fast with clear solutions.",
+        btn_cta_whatsapp: "Chat on WhatsApp",
+        btn_cta_viber: "Message on Viber",
+        btn_cta_contact: "Open Contact Form",
+
+        // Footer
+        footer_bio: "State-of-the-art computer diagnostics, component-level repairs, custom gaming rigs, clean software optimizations, and bespoke software applications.",
         footer_heading_services: "Services",
         footer_heading_navigation: "Navigation",
-        footer_heading_hours: "Business Hours",
-        footer_link_repair: "Laptop & PC Repair",
-        footer_link_sales: "Custom PC Assemblies",
-        footer_link_software: "Software Optimization",
-        footer_link_appdev: "Custom Development",
-        footer_nav_home: "Home",
-        footer_nav_solutions: "Core Solutions",
-        footer_nav_contact: "Contact Support",
-        footer_nav_quote: "Get Quote",
+        footer_heading_socials: "Follow AK Tech",
+        footer_hours: "Business Hours",
         day_mon_fri: "Monday - Friday",
         day_sat: "Saturday",
         day_sun: "Sunday",
         closed: "Closed",
-        copyright: "&copy; 2026 AK Tech. All Rights Reserved. Designed & Engineered with premium responsive glassmorphism.",
+        copyright: "&copy; 2026 AK Tech. All Rights Reserved. Engineered with precision.",
+
+        // Floating Support Bar
+        float_wa_title: "WhatsApp Chat",
         float_wa_desc: "Replies in minutes",
+        float_viber_title: "Viber Support",
         float_viber_desc: "Instant message",
-        float_call_desc: "Available 8 AM - 6 PM"
+        float_call_title: "Call Direct",
+        float_call_desc: "Mon - Sat 08-18h",
+
+        // Common Buttons
+        btn_request_quote: "Request a Quote",
+        btn_send_request: "Send Secure Request",
+        btn_back_home: "Back to Home",
+        btn_visit_site: "Visit Official Site",
+
+        // Services Page Specific
+        services_page_title: "Our Full Range of <span class=\"gradient-text\">Tech Services</span>",
+        services_page_desc: "Engineered for speed, durability, and operational excellence. Discover our hardware, software, and creative development solutions.",
+        srv_photo_title: "Photo Editing & Graphic Design",
+        srv_photo_desc: "Professional retouching, promotional banners, vector logo tracing, and brand assets created with Adobe Photoshop & Illustrator.",
+        srv_video_title: "Video Editing & Social Content",
+        srv_video_desc: "Dynamic short-form reels, product showcase videos, YouTube editing, and branded social media kits designed with Premiere & Canva.",
+
+        // Products Page Specific
+        products_page_title: "Digital Products & <span class=\"gradient-text\">Hardware Deals</span>",
+        products_page_desc: "Instant software utilities, digital tools on Gumroad, verified hardware on OLX.ba, and group device categories.",
+        sec_featured_products: "Featured Software & Applications",
+        sec_gumroad_preview: "Gumroad Digital Store",
+        sec_olx_preview: "OLX Hardware & Devices",
+        sec_bestbuy: "Hardware Device Categories & Deals",
+        sec_group_devices: "Hardware Categories (Laptops, Desktops, Tablets, Phones)",
+
+        // Gumroad Store Page
+        gumroad_page_title: "Gumroad <span class=\"gradient-text\">Digital Store</span>",
+        gumroad_page_desc: "Pay securely with instant digital delivery. Click any product to open the secure Gumroad overlay without leaving our site.",
+
+        // Resources Page
+        resources_page_title: "Apps, Guides & <span class=\"gradient-text\">Useful Resources</span>",
+        resources_page_desc: "A curated collection of free software, system handbooks, trusted open-source applications, and modern AI platforms.",
+        sec_free_downloads: "Free Downloads (Apps & PDFs)",
+        sec_open_source: "Top Recommended Open-Source Apps",
+        sec_ai_tools: "Curated AI Tools & Platforms",
+
+        // Downloads Page
+        downloads_page_title: "AK Tech <span class=\"gradient-text\">Downloads Library</span>",
+        downloads_page_desc: "Free optimization scripts, diagnostic checklists, and computer maintenance guides prepared for you.",
+
+        // Free Tools Page
+        tools_page_title: "Free Online <span class=\"gradient-text\">Browser Tools</span>",
+        tools_page_desc: "Fast, client-side image and document utilities running locally in your browser. Private, secure, and instant.",
+        tab_tool_resizer: "Image Resizer",
+        tab_tool_converter: "Format Converter",
+        tab_tool_img_pdf: "Image to PDF",
+        tab_tool_pdf_img: "PDF to Image",
+        sec_advice_form: "Need Free Quick Advice?",
+
+        // About Page
+        about_page_title: "About <span class=\"gradient-text\">AK Tech</span>",
+        about_page_desc: "Combining hardware craft with modern software engineering. Learn about our standards, diagnostics lab, and technology philosophy.",
+        about_story_title: "The AK Tech Story",
+        about_mission_title: "Our Mission & Standards",
+        about_lab_title: "Inside the Diagnostics Lab",
+
+        // Contact Page
+        contact_page_title: "Get in Touch with <span class=\"gradient-text\">AK Tech</span>",
+        contact_page_desc: "Have a broken machine? Need a custom software application or PC build? Send us a message or contact us directly on WhatsApp & Viber.",
+        form_name_label: "Full Name",
+        form_email_label: "Email Address",
+        form_subject_label: "Subject",
+        form_service_label: "Service of Interest",
+        form_message_label: "Your Message / Issue Details"
     },
+
     bs: {
+        // Global Navigation
         nav_home: "Početna",
-        nav_repairs: "Servis",
-        nav_sales: "Prodaja & Custom",
-        nav_software: "Optimizacija",
-        nav_appdev: "Izrada Aplikacija",
+        nav_services: "Usluge",
+        nav_resources: "Aplikacije & Resursi",
+        nav_products: "Proizvodi",
+        nav_projects: "Projekti",
+        nav_tools: "Besplatni Alati",
+        nav_about: "O nama",
         nav_contact: "Kontakt",
+        nav_downloads: "Biblioteka Preuzimanja",
+        nav_gumroad: "Gumroad Prodavnica",
         btn_get_quote: "Zatraži Ponudu",
-        hero_badge_text: "Napredna IT Rješenja",
-        hero_title: "Mi kreiramo <span class=\"gradient-text\">Performanse</span> & <span class=\"gradient-text secondary-gradient\">Inovacije</span>",
-        hero_desc: "AK Tech pruža profesionalne hardverske popravke, sklapanje računara visokih performansi po želji, dubinsko podešavanje operativnih sistema i izradu robusnih prilagođenih aplikacija. Vaša digitalna arhitektura, optimizovana.",
-        hero_btn_book: "Rezerviši Servis",
-        hero_btn_explore: "Istraži Rješenja <i class=\"fa-solid fa-arrow-down\"></i>",
-        status_active: "<span class=\"pulse-dot\"></span> Online Dijagnostika Aktivna",
-        metric_success_title: "Procenat Uspješnosti",
-        metric_repairs_title: "Završeni Hardverski Servisi",
-        metric_fps_title: "Optimizovani FPS Boost",
-        metric_certified: "<i class=\"fa-solid fa-shield-halved\"></i> Certifikovana Dijagnostika",
-        metric_chat: "Započni Chat <i class=\"fa-solid fa-chevron-right\"></i>",
-        
-        rep_subtitle: "Hardverska dijagnostika i mikro-popravke",
-        rep_title: "Servis Laptopa i Računara",
-        rep_desc: "Visokoprecizno dijagnostičko testiranje i popravke na nivou ploče. Koristimo najsavremeniju dijagnostičku opremu i mikroskopske stanice za napredne popravke. Ne bacajte pokvareni hardver—mi vraćamo život matičnim pločama i mikroelektronici.",
-        rep_chk1: "Kompletna mikroskopska dijagnostika hardvera",
-        rep_chk2: "Lemljenje BGA čipova i zamjena ekrana",
-        rep_chk3: "Dubinsko čišćenje i zamjena termalne paste",
-        rep_btn: "Zatraži Cijenu Dijagnostike",
-        rep_badge: "<i class=\"fa-solid fa-clock\"></i> Dostupna usluga istog dana",
-        
-        sal_subtitle: "Custom radne stanice i gaming računari",
-        sal_title: "Prodaja i Custom Konfiguracije",
-        sal_desc: "Sklapamo računarske konfiguracije visokih performansi optimizovane za renderovanje, video montažu, zahtjevan 3D dizajn i izuzetno glatke frejmove u igrama. Takođe vršimo nabavku vrhunskih novih i sertifikovanih polovnih poslovnih laptopa.",
-        sal_chk1: "Custom sistemi sa vodenim hlađenjem",
-        sal_chk2: "Vrhunski radni laptopi (novi i polovni)",
-        sal_chk3: "Nadogradnja SSD diskova i RAM memorije",
-        sal_btn: "Zatraži Ponudu za Računar",
-        sal_badge: "<i class=\"fa-solid fa-medal\"></i> 2 godine garancije na hardver",
-        
-        soft_subtitle: "Podešavanje OS-a i maksimalne performanse",
-        soft_title: "Optimizacija Softvera",
-        soft_desc: "Pretvorite svoj spori računar ponovo u brzu mašinu. Vršimo duboku optimizaciju sistema na nivou kernela, sigurno uklanjanje virusa i malvera u pozadini, podešavanje drajvera i kreiranje automatskih rezervnih kopija.",
-        soft_chk1: "Čista instalacija OS-a i podešavanje drajvera (Windows/Linux)",
-        soft_chk2: "Uklanjanje virusa, malvera i pozadinskog bloatware-a",
-        soft_chk3: "Povrat izgubljenih podataka i sigurni backup sistemi",
-        soft_btn: "Ubrzaj Moj Sistem",
-        soft_badge: "<i class=\"fa-solid fa-rocket\"></i> Prosječno 35% brže pokretanje",
-        
-        dev_subtitle: "Full-stack web i prilagođene aplikacije",
-        dev_title: "Izrada Aplikacija po Mjeri",
-        dev_desc: "Kreiramo visokokvalitetna i brza softverska rješenja prilagođena direktno vašim poslovnim procesima. Od intuitivnog dizajna korisničkog interfejsa do skalabilnih baza podataka, pretvaramo složene procese u jednostavnu i sigurnu logiku.",
-        dev_chk1: "Web POS, CRM i korisnički portali sa bazama podataka",
-        dev_chk2: "Moderne mobilne aplikacije sa staklenim UI dizajnom",
-        dev_chk3: "Izrada API-ja, integracije i automatizacija zadataka",
-        dev_btn: "Razgovarajmo o Aplikaciji",
-        dev_badge: "<i class=\"fa-solid fa-laptop-code\"></i> Uključena kompletna kontrola izvornog koda",
-        
-        contact_badge_text: "Kontaktirajte podršku",
-        contact_title: "Razgovarajmo o <br><span class=\"gradient-text\">Vašem Sljedećem Projektu</span>",
-        contact_desc: "Trebate hitnu hardversku dijagnostiku? Ili planirate razvoj nove aplikacije? Popunite kontakt formu i naš tim će vam odgovoriti sa ponudom u roku od jednog radnog dana.",
-        channel_email: "Podrška putem E-maila",
-        channel_whatsapp: "WhatsApp Chat uživo",
-        channel_viber: "Viber Linija",
-        
-        lbl_name: "<i class=\"fa-solid fa-user\"></i> Ime i Prezime",
-        lbl_email: "<i class=\"fa-solid fa-envelope\"></i> E-mail Adresa",
-        lbl_subject: "<i class=\"fa-solid fa-heading\"></i> Predmet",
-        lbl_service: "<i class=\"fa-solid fa-circle-info\"></i> Željena Usluga",
-        lbl_message: "<i class=\"fa-solid fa-message\"></i> Detaljna Poruka",
-        btn_send: "Pošalji Siguran Upit <i class=\"fa-solid fa-paper-plane\"></i>",
-        
-        select_default: "Odaberite uslugu...",
-        select_repair: "Servis Laptopa i Računara",
-        select_sales: "Prodaja i Custom Konfiguracije",
-        select_software: "Optimizacija Softvera",
-        select_appdev: "Izrada Aplikacija po Mjeri",
-        select_general: "Opšta Podrška / Ostalo",
-        
-        footer_bio: "Vrhunska kompjuterska dijagnostika, precizne mikroskopske popravke matičnih ploča, gaming sistemi visoke vjernosti, čiste optimizacije softvera i visoko robusne prilagođene aplikacije.",
+
+        // Dropdown Titles
+        dropdown_services: "Naše Usluge",
+        dropdown_resources: "Resursi & Preuzimanja",
+        dropdown_products: "Katalog Proizvoda",
+
+        // Homepage Hero
+        hero_badge_text: "IT Rješenja Spremna za Budućnost",
+        hero_title: "Inženjering <span class=\"gradient-text\">Performansi</span> i <span class=\"gradient-text secondary-gradient\">Inovacija</span>",
+        hero_desc: "AK Tech nudi precizne hardverske popravke, sklapanje custom računara visokih performansi, dubinsku optimizaciju sistema, izradu prilagođenog softvera i korisne besplatne alate. Vaša digitalna arhitektura, dovedena do savršenstva.",
+        hero_btn_services: "Istraži Usluge",
+        hero_btn_products: "Istraži Proizvode",
+
+        // Homepage Services Grid
+        home_services_badge: "Šta Radimo",
+        home_services_title: "Specijalizovane <span class=\"gradient-text\">Tehničke Usluge</span>",
+        home_services_desc: "Od mikroskopskog lemljenja matičnih ploča do modernih web i desktop aplikacija, pokrivamo cjelokupan spektar modernog hardvera i softvera.",
+        btn_view_all_services: "Pogledaj Sve Usluge",
+
+        // Service Items (Home Grid)
+        srv_desktop_title: "Custom Desktop Aplikacije",
+        srv_desktop_desc: "Brze i pouzdane Windows aplikacije u C# .NET / WPF tehnologijama sa integracijom na nivou operativnog sistema.",
+        srv_web_title: "Web Aplikacije & Landing Stranice",
+        srv_web_desc: "Responzivne web aplikacije, moderne prezentacijske stranice za firme i automatizovano postavljanje na hosting.",
+        srv_android_title: "Izrada Android Aplikacija",
+        srv_android_desc: "Prilagođene Android aplikacije za poslovanje, telemetriju, skladišta i brze interne operacije.",
+        srv_debug_title: "Pronalaženje i Ispravka Grešaka",
+        srv_debug_desc: "Otklanjanje teških programerskih bugova, optimizacija uskih grla koda i refaktorisanje arhitekture.",
+        srv_hardware_title: "Održavanje & Popravka Hardvera",
+        srv_hardware_desc: "Precizna dijagnostika, čišćenje prašine, zamjena termalne paste i mikrolemljenje komponenti na matičnim pločama.",
+        srv_os_title: "Instalacija Sistema & Softvera",
+        srv_os_desc: "Čista instalacija Windows i Linux sistema, instalacija drajvera, uklanjanje virusa i ubrzanje podizanja sistema.",
+
+        // Homepage Products Section
+        home_products_badge: "Katalog & Oprema",
+        home_products_title: "Digitalni Proizvodi i <span class=\"gradient-text\">Hardver</span>",
+        home_products_desc: "Istražite naše digitalne alate na Gumroadu ili pregledajte provjerene računare i laptope na OLX.ba platformi.",
+        tab_gumroad: "Gumroad Digitalna Prodavnica",
+        tab_olx: "OLX Računari & Oprema",
+        btn_view_all_gumroad: "Pogledaj Sve Gumroad Proizvode",
+        btn_view_all_olx: "Pogledaj Sve na OLX.ba",
+        btn_buy_instant: "Kupi Odmah (Modal)",
+        btn_order_whatsapp: "Naruči putem WhatsAppa",
+        badge_instant_download: "Trenutna Isporuka",
+
+        // Homepage Resources & Downloads Section
+        home_resources_badge: "Besplatni Resursi",
+        home_resources_title: "Aplikacije i <span class=\"gradient-text\">Preuzimanja</span>",
+        home_resources_desc: "Preuzmite besplatne priručnike za održavanje računara, automatizovane skripte i otkrijte najbolje open-source programe.",
+        btn_view_all_resources: "Pogledaj Sve Resurse",
+        btn_download_free: "Preuzmi Besplatno",
+
+        // Homepage Free Tools Section
+        home_tools_badge: "Besplatni Alati",
+        home_tools_title: "Besplatni Online <span class=\"gradient-text\">Browser Alati</span>",
+        home_tools_desc: "Promijenite veličinu slika, pretvorite format, spojite slike u PDF i izvezite PDF u slike direktno u vašem pregledniku.",
+        btn_view_all_tools: "Otvori Besplatne Alate",
+
+        // Homepage Projects Section
+        home_projects_badge: "Portfolio & Razvoj",
+        home_projects_title: "Izdvojeni <span class=\"gradient-text\">Softverski Projekti</span>",
+        home_projects_desc: "Nedavne desktop aplikacije, web portali i sistemski alati razvijeni po najvišim standardima koda.",
+        btn_view_github: "Pogledaj na GitHubu",
+        btn_live_demo: "Pogledaj Uživo",
+
+        // Homepage Quick CTA Section
+        home_cta_badge: "Brza Pomoć",
+        home_cta_title: "Imate Kvar ili <span class=\"gradient-text\">Planirate Projekat?</span>",
+        home_cta_desc: "Javite se odmah putem WhatsAppa, Vibera ili pošaljite poruku kroz kontakt formu. Odgovaramo brzo s konkretnim rješenjem.",
+        btn_cta_whatsapp: "Piši na WhatsApp",
+        btn_cta_viber: "Piši na Viber",
+        btn_cta_contact: "Otvori Kontakt Formu",
+
+        // Footer
+        footer_bio: "Precizna dijagnostika računara, mikroskopsko lemljenje matičnih ploča, sklapanje custom računara, optimizacija sistema i izrada softvera po mjeri.",
         footer_heading_services: "Usluge",
         footer_heading_navigation: "Navigacija",
-        footer_heading_hours: "Radno Vrijeme",
-        footer_link_repair: "Servis Laptopa i Računara",
-        footer_link_sales: "Custom PC Konfiguracije",
-        footer_link_software: "Optimizacija Softvera",
-        footer_link_appdev: "Izrada Aplikacija po Mjeri",
-        footer_nav_home: "Početna",
-        footer_nav_solutions: "Glavna Rješenja",
-        footer_nav_contact: "Kontakt Podrška",
-        footer_nav_quote: "Zatraži Ponudu",
+        footer_heading_socials: "Pratite AK Tech",
+        footer_hours: "Radno Vrijeme",
         day_mon_fri: "Ponedjeljak - Petak",
         day_sat: "Subota",
         day_sun: "Nedjelja",
         closed: "Zatvoreno",
-        copyright: "&copy; 2026 AK Tech. Sva prava zadržana. Dizajnirano i razvijeno sa premium responzivnim staklenim dizajnom.",
-        float_wa_desc: "Odgovor u roku od par minuta",
-        float_viber_desc: "Instant poruka",
-        float_call_desc: "Dostupno od 08:00 do 18:00h"
+        copyright: "&copy; 2026 AK Tech. Sva prava zadržana. Inženjering s preciznošću.",
+
+        // Floating Support Bar
+        float_wa_title: "WhatsApp Chat",
+        float_wa_desc: "Odgovor u par minuta",
+        float_viber_title: "Viber Podrška",
+        float_viber_desc: "Brza poruka",
+        float_call_title: "Pozovi Direktno",
+        float_call_desc: "Pon - Sub 08-18h",
+
+        // Common Buttons
+        btn_request_quote: "Zatraži Ponudu",
+        btn_send_request: "Pošalji Siguran Upit",
+        btn_back_home: "Nazad na Početnu",
+        btn_visit_site: "Otvori Zvanični Sajt",
+
+        // Services Page Specific
+        services_page_title: "Kompletan Pregled <span class=\"gradient-text\">Naših Usluga</span>",
+        services_page_desc: "Inženjering fokusiran na brzinu, pouzdanost i dugotrajnost. Istražite naše hardverske, softverske i dizajnerske usluge.",
+        srv_photo_title: "Obrada Fotografija & Grafički Dizajn",
+        srv_photo_desc: "Profesionalna obrada fotografija, baneri za društvene mreže, vektorizacija logotipa i grafička priprema u Photoshopu i Illustratoru.",
+        srv_video_title: "Video Montaža & Sadržaj za Mreže",
+        srv_video_desc: "Montaža kratkih Reels i TikTok videa, promotivni klipovi za proizvode i vizuelni materijali pripremljeni u Premiere Pro i Canvi.",
+
+        // Products Page Specific
+        products_page_title: "Digitalni Proizvodi i <span class=\"gradient-text\">Hardverska Ponuda</span>",
+        products_page_desc: "Instant softverski alati, digitalni priručnici na Gumroadu, provjereni računari i laptopi na OLX.ba i grupne ponude uređaja.",
+        sec_featured_products: "Izdvojeni Softver & Aplikacije",
+        sec_gumroad_preview: "Gumroad Digitalna Prodavnica",
+        sec_olx_preview: "OLX Računari & Oprema",
+        sec_bestbuy: "Kategorije Uređaja i Opreme",
+        sec_group_devices: "Grupna Ponuda Uređaja (Laptopi, PC, Tableti, Telefoni)",
+
+        // Gumroad Store Page
+        gumroad_page_title: "Gumroad <span class=\"gradient-text\">Digitalna Prodavnica</span>",
+        gumroad_page_desc: "Sigurno plaćanje uz trenutno preuzimanje fajlova. Klikom na bilo koji proizvod otvara se direktan prozor bez napuštanja našeg sajta.",
+
+        // Resources Page
+        resources_page_title: "Aplikacije, Vodiči i <span class=\"gradient-text\">Korisni Resursi</span>",
+        resources_page_desc: "Besplatne aplikacije, priručnici za održavanje računara, provjereni open-source programi i preporučene AI platforme.",
+        sec_free_downloads: "Besplatna Preuzimanja (Aplikacije & PDF)",
+        sec_open_source: "Top Preporučeni Open-Source Programi",
+        sec_ai_tools: "Preporučeni AI Alati i Platforme",
+
+        // Downloads Page
+        downloads_page_title: "AK Tech <span class=\"gradient-text\">Biblioteka Preuzimanja</span>",
+        downloads_page_desc: "Besplatne skripte za optimizaciju, dijagnostičke liste i priručnici za održavanje računara spremni za direktan download.",
+
+        // Free Tools Page
+        tools_page_title: "Besplatni Online <span class=\"gradient-text\">Browser Alati</span>",
+        tools_page_desc: "Brzi alati za obradu slika i dokumenata koji se izvršavaju direktno u vašem internet pregledniku. Privatno, sigurno i instant.",
+        tab_tool_resizer: "Promjena Veličine Slike",
+        tab_tool_converter: "Konverter Formata",
+        tab_tool_img_pdf: "Slike u PDF",
+        tab_tool_pdf_img: "PDF u Slike",
+        sec_advice_form: "Trebate Besplatan Brzi Savjet?",
+
+        // About Page
+        about_page_title: "O Brendu <span class=\"gradient-text\">AK Tech</span>",
+        about_page_desc: "Spoj preciznog hardverskog rada i modernog softverskog razvoja. Upoznajte naše standarde, laboratoriju i tehnološku filozofiju.",
+        about_story_title: "Priča o AK Tech-u",
+        about_mission_title: "Naša Misija i Standardi",
+        about_lab_title: "Pogled u Servisnu Laboratoriju",
+
+        // Contact Page
+        contact_page_title: "Stupite u Kontakt sa <span class=\"gradient-text\">AK Tech-om</span>",
+        contact_page_desc: "Trebate servis računara, izradu custom softvera ili želite savjet pri kupovini? Pišite nam ili nas kontaktirajte direktno putem WhatsAppa i Vibera.",
+        form_name_label: "Ime i Prezime",
+        form_email_label: "Email Adresa",
+        form_subject_label: "Predmet Poruke",
+        form_service_label: "Usluga koja vas zanima",
+        form_message_label: "Opis problema ili detalji projekta"
     }
 };
+
+window.translations = translations;

@@ -1,11 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AK Tech | Premium Computer Repairs, Custom Builds & App Development</title>
-    <meta name="description" content="Professional diagnostics, laptop/PC repairs, custom high-performance PC builds, operating system software optimization, and custom full-stack app development by AK Tech.">
-    <meta name="keywords" content="AK Tech, computer repair, custom gaming PC, software optimization, custom app development, motherboard soldering, tech support, Web3Forms contact">
+    <title>AK Tech | IT Servis, Razvoj Softvera i Digitalni Proizvodi</title>
+    <meta name="description" content="Profesionalni računarski servis u Sarajevu i Vogošći: popravka matičnih ploča, mikrolemljenje, čišćenje i zamjena termalne paste, izrada desktop i web aplikacija, te provjereni OLX i Gumroad proizvodi.">
+    <meta name="keywords" content="AK Tech, servis računara sarajevo, servis laptopa vogošća, popravka matičnih ploča, mikrolemljenje, desktop aplikacije c#, web development, olx računari, gumroad alati, bosna i hercegovina">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="author" content="AK TECH">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://aktech.work/">
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aktech.work/">
+    <meta property="og:title" content="AK Tech | IT Servis, Razvoj Softvera i Digitalni Proizvodi">
+    <meta property="og:description" content="Profesionalni računarski servis u Sarajevu i Vogošći, mikrolemljenje, izrada desktop i web softvera po mjeri, te provjereni uređaji.">
+    <meta property="og:image" content="https://aktech.work/images/logo.png">
+    <meta property="og:site_name" content="AK TECH">
+    <meta property="og:locale" content="bs_BA">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AK Tech | IT Servis, Razvoj Softvera i Digitalni Proizvodi">
+    <meta name="twitter:description" content="Profesionalni računarski servis, popravka matičnih ploča, izrada softvera po mjeri i digitalni alati.">
+    <meta name="twitter:image" content="https://aktech.work/images/hero_bg.png">
+
+    <!-- Schema.org JSON-LD Structured Data for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ComputerRepairService",
+      "name": "AK TECH",
+      "image": "https://aktech.work/images/logo.png",
+      "url": "https://aktech.work",
+      "telephone": "+38761293073",
+      "email": "support@aktech.work",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Vogošća",
+        "addressRegion": "Sarajevo",
+        "addressCountry": "BA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 43.9015,
+        "longitude": 18.3435
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "16:00"
+        }
+      ],
+      "sameAs": [
+        "https://github.com/KadricAl",
+        "https://olx.ba/profil/AKTech",
+        "https://aktechcraft.gumroad.com/",
+        "https://www.instagram.com/ak.tech.verse",
+        "https://www.facebook.com/share/1A7irGQCFo/",
+        "https://youtube.com/@aktechvers"
+      ]
+    }
+    </script>
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/logo.png">
@@ -15,42 +82,90 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- FontAwesome Icons for modern icons -->
+    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Gumroad Overlay JS -->
+    <script src="https://gumroad.com/js/gumroad.js"></script>
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body class="dark-theme">
 
-    <!-- Header / Navigation Bar -->
+    <!-- Header / Navigation Bar with Dropdown Menus -->
     <header class="main-header">
         <div class="container nav-container">
-            <a href="#" class="logo-area">
+            <a href="index.html" class="logo-area">
                 <img src="images/logo.png" alt="AK Tech Logo" class="nav-logo">
                 <span class="logo-text">AK <span class="accent-text">TECH</span></span>
             </a>
             
             <nav class="nav-menu" id="navMenu">
                 <ul class="nav-list">
-                    <li><a href="#hero" class="nav-link active" data-i18n="nav_home">Home</a></li>
-                    <li><a href="#repair" class="nav-link" data-i18n="nav_repairs">Repairs</a></li>
-                    <li><a href="#sales" class="nav-link" data-i18n="nav_sales">Sales & Custom</a></li>
-                    <li><a href="#software" class="nav-link" data-i18n="nav_software">Software Opt</a></li>
-                    <li><a href="#appdev" class="nav-link" data-i18n="nav_appdev">App Dev</a></li>
-                    <li><a href="#contact" class="nav-link contact-btn-link" data-i18n="nav_contact">Contact</a></li>
+                    <li><a href="index.html" class="nav-link active" data-i18n="nav_home">Početna</a></li>
+                    
+                    <!-- Services Dropdown -->
+                    <li class="nav-item-dropdown">
+                        <a href="services.html" class="nav-link dropdown-toggle-link">
+                            <span data-i18n="nav_services">Usluge</span>
+                            <i class="fa-solid fa-chevron-down dropdown-icon-chevron"></i>
+                        </a>
+                        <ul class="nav-dropdown-menu">
+                            <li><a href="services.html#desktop-dev" class="nav-dropdown-link"><i class="fa-solid fa-laptop-code"></i> Desktop Aplikacije</a></li>
+                            <li><a href="services.html#web-dev" class="nav-dropdown-link"><i class="fa-solid fa-globe"></i> Web & Landing Stranice</a></li>
+                            <li><a href="services.html#android-dev" class="nav-dropdown-link"><i class="fa-brands fa-android"></i> Android Aplikacije</a></li>
+                            <li><a href="services.html#debugging" class="nav-dropdown-link"><i class="fa-solid fa-bug-slash"></i> Debug & Fix Koda</a></li>
+                            <li><a href="services.html#photo-design" class="nav-dropdown-link"><i class="fa-solid fa-image"></i> Obrada Fotografija</a></li>
+                            <li><a href="services.html#video-social" class="nav-dropdown-link"><i class="fa-solid fa-clapperboard"></i> Video & Social Media</a></li>
+                            <li><a href="services.html#maintenance" class="nav-dropdown-link"><i class="fa-solid fa-screwdriver-wrench"></i> Servis & Održavanje</a></li>
+                            <li><a href="services.html#os-tuning" class="nav-dropdown-link"><i class="fa-solid fa-gauge-high"></i> Instalacija & Podešavanje OS</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Apps & Downloads Dropdown -->
+                    <li class="nav-item-dropdown">
+                        <a href="resources.html" class="nav-link dropdown-toggle-link">
+                            <span data-i18n="nav_resources">Aplikacije & Resursi</span>
+                            <i class="fa-solid fa-chevron-down dropdown-icon-chevron"></i>
+                        </a>
+                        <ul class="nav-dropdown-menu">
+                            <li><a href="resources.html" class="nav-dropdown-link"><i class="fa-solid fa-folder-open"></i> Svi Resursi & Vodiči</a></li>
+                            <li><a href="downloads.html" class="nav-dropdown-link"><i class="fa-solid fa-download"></i> Biblioteka Preuzimanja</a></li>
+                            <li><a href="resources.html#open-source" class="nav-dropdown-link"><i class="fa-solid fa-code"></i> Open-Source Programi</a></li>
+                            <li><a href="resources.html#ai-tools" class="nav-dropdown-link"><i class="fa-solid fa-wand-magic-sparkles"></i> Preporučeni AI Alati</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Products Dropdown -->
+                    <li class="nav-item-dropdown">
+                        <a href="products.html" class="nav-link dropdown-toggle-link">
+                            <span data-i18n="nav_products">Proizvodi</span>
+                            <i class="fa-solid fa-chevron-down dropdown-icon-chevron"></i>
+                        </a>
+                        <ul class="nav-dropdown-menu">
+                            <li><a href="products.html" class="nav-dropdown-link"><i class="fa-solid fa-boxes-stacked"></i> Katalog Proizvoda</a></li>
+                            <li><a href="gumroad-products.html" class="nav-dropdown-link"><i class="fa-solid fa-store"></i> Gumroad Prodavnica</a></li>
+                            <li><a href="products.html#olx" class="nav-dropdown-link"><i class="fa-solid fa-cart-shopping"></i> OLX Računari & Oprema</a></li>
+                            <li><a href="products.html#group-devices" class="nav-dropdown-link"><i class="fa-solid fa-laptop"></i> Grupna Ponuda Uređaja</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="tools.html" class="nav-link" data-i18n="nav_tools">Besplatni Alati</a></li>
+                    <li><a href="#projects" class="nav-link" data-i18n="nav_projects">Projekti</a></li>
+                    <li><a href="about.html" class="nav-link" data-i18n="nav_about">O nama</a></li>
+                    <li><a href="contact.html" class="nav-link contact-btn-link" data-i18n="nav_contact">Kontakt</a></li>
                 </ul>
             </nav>
             
             <div class="nav-actions">
-                <!-- Premium Language Toggler Switcher -->
                 <div class="lang-switcher">
-                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn active" data-lang="bs">BS</button>
                     <span class="lang-divider">|</span>
-                    <button class="lang-btn" data-lang="bs">BS</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
                 </div>
                 
-                <a href="#contact" class="btn btn-nav-cta" data-i18n="btn_get_quote">Get Quote</a>
+                <a href="contact.html" class="btn btn-nav-cta" data-i18n="btn_get_quote">Zatraži Ponudu</a>
                 <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -60,361 +175,302 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero-section" style="background-image: url('images/hero_bg.png');">
+    <!-- Homepage Hero Section (Without metrics, focused on 2 main buttons) -->
+    <section id="hero" class="hero-section" style="background-image: url('images/hero_bg.png'); min-height: 85vh;">
         <div class="hero-overlay"></div>
-        <div class="hero-grid container">
-            <div class="hero-content">
-                <div class="badge-container">
-                    <span class="hero-badge"><i class="fa-solid fa-bolt pulse-icon"></i> <span data-i18n="hero_badge_text">Future-Proof IT Solutions</span></span>
+        <div class="hero-grid container" style="grid-template-columns: 1fr; text-align: center; max-width: 900px; margin: 0 auto;">
+            <div class="hero-content" style="margin: 0 auto;">
+                <div class="badge-container" style="justify-content: center;">
+                    <span class="hero-badge"><i class="fa-solid fa-bolt pulse-icon"></i> <span data-i18n="hero_badge_text">IT Rješenja Spremna za Budućnost</span></span>
                 </div>
-                <h1 class="hero-title" data-i18n="hero_title">
-                    We Engineer <span class="gradient-text">Performance</span> & <span class="gradient-text secondary-gradient">Innovation</span>
+                <h1 class="hero-title" data-i18n="hero_title" style="font-size: 3.5rem;">
+                    Inženjering <span class="gradient-text">Performansi</span> i <span class="gradient-text secondary-gradient">Inovacija</span>
                 </h1>
-                <p class="hero-desc" data-i18n="hero_desc">
-                    AK Tech delivers professional hardware micro-repairs, high-performance custom computer rigs, deep operating system tuning, and robust bespoke applications. Your digital architecture, optimized.
+                <p class="hero-desc" data-i18n="hero_desc" style="max-width: 720px; margin: 0 auto 36px; font-size: 1.2rem;">
+                    AK Tech nudi precizne hardverske popravke, sklapanje custom računara visokih performansi, dubinsku optimizaciju sistema, izradu prilagođenog softvera i korisne besplatne alate. Vaša digitalna arhitektura, dovedena do savršenstva.
                 </p>
-                <div class="hero-actions">
-                    <a href="#contact" class="btn btn-primary btn-glow" data-i18n="hero_btn_book">Book a Service</a>
-                    <a href="#repair" class="btn btn-secondary"><span data-i18n="hero_btn_explore">Explore Solutions</span> <i class="fa-solid fa-arrow-down"></i></a>
+                <div class="hero-actions" style="justify-content: center; gap: 20px;">
+                    <a href="services.html" class="btn btn-primary btn-glow" data-i18n="hero_btn_services">Istraži Usluge</a>
+                    <a href="products.html" class="btn btn-secondary" data-i18n="hero_btn_products">Istraži Proizvode</a>
                 </div>
-                <div class="hero-socials">
-                    <a href="#" target="_blank" class="social-icon-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                    <a href="#" target="_blank" class="social-icon-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#" target="_blank" class="social-icon-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-            </div>
-            
-            <div class="hero-visual-card">
-                <div class="glass-card hero-metrics-card">
-                    <div class="metrics-header">
-                        <span class="status-indicator"><span class="pulse-dot"></span> <span data-i18n="status_active">Online Diagnostics Active</span></span>
-                        <i class="fa-solid fa-server color-cyan"></i>
-                    </div>
-                    <div class="metrics-body">
-                        <div class="metric-item">
-                            <span class="metric-title" data-i18n="metric_success_title">Success Rate</span>
-                            <span class="metric-value">99.8%</span>
-                            <div class="metric-bar"><div class="bar-fill cyan-fill" style="width: 99.8%;"></div></div>
-                        </div>
-                        <div class="metric-item">
-                            <span class="metric-title" data-i18n="metric_repairs_title">Hardware Repairs Complete</span>
-                            <span class="metric-value">1,420+</span>
-                            <div class="metric-bar"><div class="bar-fill purple-fill" style="width: 85%;"></div></div>
-                        </div>
-                        <div class="metric-item">
-                            <span class="metric-title" data-i18n="metric_fps_title">Optimized FPS Boost</span>
-                            <span class="metric-value">Up to 45%</span>
-                            <div class="metric-bar"><div class="bar-fill green-fill" style="width: 92%;"></div></div>
-                        </div>
-                    </div>
-                    <div class="metrics-footer">
-                        <span><i class="fa-solid fa-shield-halved"></i> <span data-i18n="metric_certified">Certified Diagnostics</span></span>
-                        <a href="#contact" class="chat-trigger-link"><span data-i18n="metric_chat">Start Chat</span> <i class="fa-solid fa-chevron-right"></i></a>
-                    </div>
+                <div class="hero-socials" style="justify-content: center; margin-top: 36px;">
+                    <a href="https://github.com/KadricAl" target="_blank" class="social-icon-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://olx.ba/profil/AKTech" target="_blank" class="social-icon-link" aria-label="OLX"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="https://aktechcraft.gumroad.com/" target="_blank" class="social-icon-link" aria-label="Gumroad"><i class="fa-solid fa-bag-shopping"></i></a>
+                    <a href="https://www.instagram.com/ak.tech.verse?exln=N3piMXA0NmQ5NzFv&utm_source=qr" target="_blank" class="social-icon-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/share/1A7irGQCFo/?mibextid=wwXIfr" target="_blank" class="social-icon-link" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://youtube.com/@aktechvers?si=SF_6i_wLMFAemTBW" target="_blank" class="social-icon-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Container Wrapper -->
-    <main class="services-wrapper">
-        
-        <!-- Section 1: Repair Laptop and PC -->
-        <section id="repair" class="service-section" style="background-image: url('images/repair_bg.png');">
-            <div class="section-overlay"></div>
-            <div class="container section-container">
-                <div class="section-card-wrapper">
-                    <div class="glass-card service-content-card border-glow-cyan">
-                        <div class="card-icon-header">
-                            <div class="icon-circle glow-bg-cyan">
-                                <i class="fa-solid fa-screwdriver-wrench text-glow-cyan"></i>
-                            </div>
-                            <span class="service-subtitle" data-i18n="rep_subtitle">Hardware diagnostics & micro-repairs</span>
-                        </div>
-                        <h2 class="service-title" data-i18n="rep_title">Repair Laptop & PC</h2>
-                        <p class="service-desc" data-i18n="rep_desc">
-                            High-precision diagnostic testing and board-level hardware repairs. We utilize state-of-the-art diagnostic gear and microscope stations for advanced repairs. Don't throw away broken hardware—we breathe life back into logic boards and microelectronics.
-                        </p>
-                        <ul class="checklist">
-                            <li><span class="chk-icon"><i class="fa-solid fa-check"></i></span> <span data-i18n="rep_chk1">Full Microscopic Hardware Diagnostics</span></li>
-                            <li><span class="chk-icon"><i class="fa-solid fa-check"></i></span> <span data-i18n="rep_chk2">BGA Chip Soldering & Screen Replacements</span></li>
-                            <li><span class="chk-icon"><i class="fa-solid fa-check"></i></span> <span data-i18n="rep_chk3">Deep Thermal Repasting & Liquid Cleaning</span></li>
-                        </ul>
-                        <div class="card-actions">
-                            <a href="#contact" class="btn btn-primary btn-glow btn-cyan" onclick="setServiceInquiry('Repair')" data-i18n="rep_btn">Get Diagnostic Quote</a>
-                            <span class="service-info-badge"><i class="fa-solid fa-clock"></i> <span data-i18n="rep_badge">Same-Day Service Available</span></span>
-                        </div>
-                    </div>
+    <!-- Section 1: Services Grid (6 Core Cards + Link to services.html) -->
+    <section id="services-summary" style="padding: 100px 0; background: var(--bg-dark);">
+        <div class="container">
+            <div style="text-align: center; max-width: 700px; margin: 0 auto 50px;">
+                <div class="badge-container" style="justify-content: center;">
+                    <span class="hero-badge"><i class="fa-solid fa-screwdriver-wrench pulse-icon"></i> <span data-i18n="home_services_badge">Šta Radimo</span></span>
                 </div>
+                <h2 style="font-size: 2.5rem; font-weight: 800; margin: 12px 0;" data-i18n="home_services_title">Specijalizovane <span class="gradient-text">Tehničke Usluge</span></h2>
+                <p style="color: var(--text-muted); font-size: 1.05rem;" data-i18n="home_services_desc">Od mikroskopskog lemljenja matičnih ploča do modernih web i desktop aplikacija, pokrivamo cjelokupan spektar modernog hardvera i softvera.</p>
             </div>
-        </section>
 
-        <!-- Section 2: Sales & Custom Builds -->
-        <section id="sales" class="service-section" style="background-image: url('images/sales_bg.png');">
-            <div class="section-overlay"></div>
-            <div class="container section-container">
-                <div class="section-card-wrapper right-align-wrapper">
-                    <div class="glass-card service-content-card border-glow-purple">
-                        <div class="card-icon-header">
-                            <div class="icon-circle glow-bg-purple">
-                                <i class="fa-solid fa-computer text-glow-purple"></i>
-                            </div>
-                            <span class="service-subtitle" data-i18n="sal_subtitle">Custom workstations & gaming desktops</span>
-                        </div>
-                        <h2 class="service-title" data-i18n="sal_title">Sales & Custom Builds</h2>
-                        <p class="service-desc" data-i18n="sal_desc">
-                            We assemble high-performance workstation and gaming computer rigs optimized specifically for rendering, editing, high-end 3D modeling, and ultra-smooth gaming frame rates. We also source premium new and certified used business laptops.
-                        </p>
-                        <ul class="checklist">
-                            <li><span class="chk-icon"><i class="fa-solid fa-check"></i></span> <span data-i18n="sal_chk1">Custom Water-Cooled Gaming Systems</span></li>
-                            <li><span class="chk-icon"><i class="fa-solid fa-check"></i></span> <span data-i18n="sal_chk2">High-End Workstation Laptops (New & Used)</span></li>
-                            <li><span class="chk-icon"><i class="fa-solid fa-check"></i></span> <span data-i18n="sal_chk3">Solid-State Drive (SSD) & RAM Expansions</span></li>
-                        </ul>
-                        <div class="card-actions">
-                            <a href="#contact" class="btn btn-primary btn-glow btn-purple" onclick="setServiceInquiry('Sales')" data-i18n="sal_btn">Request Custom Build Quote</a>
-                            <span class="service-info-badge"><i class="fa-solid fa-medal"></i> <span data-i18n="sal_badge">2-Year Rig Hardware Warranty</span></span>
-                        </div>
-                    </div>
+            <div class="cards-grid-3">
+                <div class="portal-card">
+                    <div class="card-top-badge badge-cyan"><i class="fa-solid fa-laptop-code"></i> Development</div>
+                    <h3 class="portal-card-title" data-i18n="srv_desktop_title">Custom Desktop Aplikacije</h3>
+                    <p class="portal-card-desc" data-i18n="srv_desktop_desc">Brze i pouzdane Windows aplikacije u C# .NET / WPF tehnologijama sa integracijom na nivou operativnog sistema.</p>
+                    <a href="services.html#desktop-dev" class="btn btn-secondary btn-sm"><i class="fa-solid fa-arrow-right"></i> Saznaj više</a>
                 </div>
-            </div>
-        </section>
 
-        <!-- Section 3: Software Optimization -->
-        <section id="software" class="service-section" style="background-image: url('images/software_bg.png');">
-            <div class="section-overlay"></div>
-            <div class="container section-container">
-                <div class="section-card-wrapper">
-                    <div class="glass-card service-content-card border-glow-green">
-                        <div class="card-icon-header">
-                            <div class="icon-circle glow-bg-green">
-                                <i class="fa-solid fa-gauge-high text-glow-green"></i>
-                            </div>
-                            <span class="service-subtitle" data-i18n="soft_subtitle">Operating system config & peak performance</span>
-                        </div>
-                        <h2 class="service-title" data-i18n="soft_title">Software Optimization</h2>
-                        <p class="service-desc" data-i18n="soft_desc">
-                            Transform your slow computer back into a speed demon. We perform deep kernel-level system optimization, secure background malware extraction, correct malfunctioning drivers, and design automated backup structures.
-                        </p>
-                        <ul class="checklist">
-                            <li><span class="chk-icon"><i class="fa-solid fa-check"></i></span> <span data-i18n="soft_chk1">Clean OS Installation & Drivers Patching (Windows/Linux)</span></li>
-                            <li><span class="chk-icon"><i class="fa-solid fa-check"></i></span> <span data-i18n="soft_chk2">Rootkit, Malware & Background Bloatware Removal</span></li>
-                            <li><span class="chk-icon"><i class="fa-solid fa-check"></i></span> <span data-i18n="soft_chk3">Lost File Recovery & Secure Multi-Layer Backups</span></li>
-                        </ul>
-                        <div class="card-actions">
-                            <a href="#contact" class="btn btn-primary btn-glow btn-green" onclick="setServiceInquiry('Software')" data-i18n="soft_btn">Speed Up My System</a>
-                            <span class="service-info-badge"><i class="fa-solid fa-rocket"></i> <span data-i18n="soft_badge">Average 35% Boot Speed Up</span></span>
-                        </div>
-                    </div>
+                <div class="portal-card">
+                    <div class="card-top-badge badge-purple"><i class="fa-solid fa-globe"></i> Web & Cloud</div>
+                    <h3 class="portal-card-title" data-i18n="srv_web_title">Web Aplikacije & Landing Stranice</h3>
+                    <p class="portal-card-desc" data-i18n="srv_web_desc">Responzivne web aplikacije, moderne prezentacijske stranice za firme i automatizovano postavljanje na hosting.</p>
+                    <a href="services.html#web-dev" class="btn btn-secondary btn-sm"><i class="fa-solid fa-arrow-right"></i> Saznaj više</a>
                 </div>
-            </div>
-        </section>
 
-        <!-- Section 4: Custom App Development -->
-        <section id="appdev" class="service-section" style="background-image: url('images/dev_bg.png');">
-            <div class="section-overlay"></div>
-            <div class="container section-container">
-                <div class="section-card-wrapper right-align-wrapper">
-                    <div class="glass-card service-content-card border-glow-yellow">
-                        <div class="card-icon-header">
-                            <div class="icon-circle glow-bg-yellow">
-                                <i class="fa-solid fa-code text-glow-yellow"></i>
-                            </div>
-                            <span class="service-subtitle" data-i18n="dev_subtitle">Full-stack web & customized applications</span>
-                        </div>
-                        <h2 class="service-title" data-i18n="dev_title">Custom App Development</h2>
-                        <p class="service-desc" data-i18n="dev_desc">
-                            We architect high-quality, high-speed customized web, desktop, and mobile solutions tailored directly to your operational workflows. From intuitive responsive frontend UI designs to scalable databases, we turn complex processes into simple, secure logic.
-                        </p>
-                        <ul class="checklist">
-                            <li><span class="chk-icon"><i class="fa-solid fa-check"></i></span> <span data-i18n="dev_chk1">Web-Based POS, CRM, and Custom Database Portals</span></li>
-                            <li><span class="chk-icon"><i class="fa-solid fa-check"></i></span> <span data-i18n="dev_chk2">Modern Mobile Apps with Elegant Glassmorphic UI</span></li>
-                            <li><span class="chk-icon"><i class="fa-solid fa-check"></i></span> <span data-i18n="dev_chk3">API Engineering, Integrations & Automation Tasks</span></li>
-                        </ul>
-                        <div class="card-actions">
-                            <a href="#contact" class="btn btn-primary btn-glow btn-yellow" onclick="setServiceInquiry('AppDev')" data-i18n="dev_btn">Discuss Application Idea</a>
-                            <span class="service-info-badge"><i class="fa-solid fa-laptop-code"></i> <span data-i18n="dev_badge">Complete Source Control Included</span></span>
-                        </div>
-                    </div>
+                <div class="portal-card">
+                    <div class="card-top-badge badge-green"><i class="fa-brands fa-android"></i> Mobile</div>
+                    <h3 class="portal-card-title" data-i18n="srv_android_title">Izrada Android Aplikacija</h3>
+                    <p class="portal-card-desc" data-i18n="srv_android_desc">Prilagođene Android aplikacije za poslovanje, telemetriju, skladišta i brze interne operacije.</p>
+                    <a href="services.html#android-dev" class="btn btn-secondary btn-sm"><i class="fa-solid fa-arrow-right"></i> Saznaj više</a>
                 </div>
-            </div>
-        </section>
 
-    </main>
+                <div class="portal-card">
+                    <div class="card-top-badge badge-yellow"><i class="fa-solid fa-bug-slash"></i> Refactoring</div>
+                    <h3 class="portal-card-title" data-i18n="srv_debug_title">Pronalaženje i Ispravka Grešaka</h3>
+                    <p class="portal-card-desc" data-i18n="srv_debug_desc">Otklanjanje teških programerskih bugova, optimizacija uskih grla koda i refaktorisanje arhitekture.</p>
+                    <a href="services.html#debugging" class="btn btn-secondary btn-sm"><i class="fa-solid fa-arrow-right"></i> Saznaj više</a>
+                </div>
 
-    <!-- Contact Section with Web3Forms -->
-    <section id="contact" class="contact-section">
-        <div class="contact-grid container">
-            
-            <!-- Contact Left Side Content -->
-            <div class="contact-info-panel">
-                <div class="badge-container">
-                    <span class="hero-badge"><i class="fa-solid fa-headset pulse-icon"></i> <span data-i18n="contact_badge_text">Contact support</span></span>
+                <div class="portal-card">
+                    <div class="card-top-badge badge-cyan"><i class="fa-solid fa-microchip"></i> Hardware Lab</div>
+                    <h3 class="portal-card-title" data-i18n="srv_hardware_title">Održavanje & Popravka Hardvera</h3>
+                    <p class="portal-card-desc" data-i18n="srv_hardware_desc">Precizna dijagnostika, čišćenje prašine, zamjena termalne paste i mikrolemljenje komponenti na matičnim pločama.</p>
+                    <a href="services.html#maintenance" class="btn btn-secondary btn-sm"><i class="fa-solid fa-arrow-right"></i> Saznaj više</a>
                 </div>
-                <h2 class="contact-panel-title" data-i18n="contact_title">Let's Discuss <br><span class="gradient-text">Your Next Project</span></h2>
-                <p class="contact-panel-desc" data-i18n="contact_desc">
-                    Need urgent hardware diagnostic service? Or preparing an exciting app development roadmap? Fill out the contact form, and our tech team will reply with custom proposals within a business day.
-                </p>
-                
-                <div class="direct-contact-channels">
-                    <div class="channel-card">
-                        <div class="channel-icon glow-bg-cyan"><i class="fa-solid fa-envelope"></i></div>
-                        <div class="channel-detail">
-                            <span class="channel-label" data-i18n="channel_email">Email Support</span>
-                            <a href="mailto:support@aktech.work" class="channel-value">support@aktech.work</a>
-                        </div>
-                    </div>
-                    
-                    <div class="channel-card">
-                        <div class="channel-icon glow-bg-green"><i class="fa-brands fa-whatsapp"></i></div>
-                        <div class="channel-detail">
-                            <span class="channel-label" data-i18n="channel_whatsapp">WhatsApp Live Chat</span>
-                            <a href="https://wa.me/38760000000" target="_blank" class="channel-value">+387 60 000 000</a>
-                        </div>
-                    </div>
-                    
-                    <div class="channel-card">
-                        <div class="channel-icon glow-bg-purple"><i class="fa-brands fa-viber"></i></div>
-                        <div class="channel-detail">
-                            <span class="channel-label" data-i18n="channel_viber">Viber Hotline</span>
-                            <a href="viber://chat?number=%2B38760000000" class="channel-value">+387 60 000 000</a>
-                        </div>
-                    </div>
+
+                <div class="portal-card">
+                    <div class="card-top-badge badge-green"><i class="fa-solid fa-gauge-high"></i> Optimization</div>
+                    <h3 class="portal-card-title" data-i18n="srv_os_title">Instalacija Sistema & Softvera</h3>
+                    <p class="portal-card-desc" data-i18n="srv_os_desc">Čista instalacija Windows i Linux sistema, instalacija drajvera, uklanjanje virusa i ubrzanje podizanja sistema.</p>
+                    <a href="services.html#os-tuning" class="btn btn-secondary btn-sm"><i class="fa-solid fa-arrow-right"></i> Saznaj više</a>
                 </div>
             </div>
-            
-            <!-- Contact Right Side Form (Web3Forms) -->
-            <div class="contact-form-panel">
-                <div class="glass-card form-container-card">
-                    <!-- Web3Forms Form Configuration -->
-                    <form action="https://api.web3forms.com/submit" method="POST" id="contactForm" class="ak-tech-form">
-                        
-                        <!-- Replace with your actual Web3Forms Access Key -->
-                        <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY_HERE">
-                        <input type="hidden" name="subject" value="New Service Request - AK Tech Site">
-                        <input type="checkbox" name="botcheck" id="" style="display: none;">
-                        
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="formName" data-i18n="lbl_name"><i class="fa-solid fa-user"></i> Full Name</label>
-                                <input type="text" id="formName" name="name" placeholder="John Doe" required class="form-input">
-                            </div>
-                            <div class="form-group">
-                                <label for="formEmail" data-i18n="lbl_email"><i class="fa-solid fa-envelope"></i> Email Address</label>
-                                <input type="email" id="formEmail" name="email" placeholder="john@example.com" required class="form-input">
-                            </div>
-                        </div>
-                        
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="formSubject" data-i18n="lbl_subject"><i class="fa-solid fa-heading"></i> Subject</label>
-                                <input type="text" id="formSubject" name="custom_subject" placeholder="Urgent Repair / Custom Build Inquiry" required class="form-input">
-                            </div>
-                            <div class="form-group">
-                                <label for="formService" data-i18n="lbl_service"><i class="fa-solid fa-circle-info"></i> Desired Service</label>
-                                <select id="formService" name="service_type" required class="form-input form-select">
-                                    <option value="" disabled selected data-i18n="select_default">Select a service...</option>
-                                    <option value="repair" data-i18n="select_repair">Repair Laptop & PC</option>
-                                    <option value="sales" data-i18n="select_sales">Sales & Custom Builds</option>
-                                    <option value="software" data-i18n="select_software">Software Optimization</option>
-                                    <option value="appdev" data-i18n="select_appdev">Custom App Development</option>
-                                    <option value="general" data-i18n="select_general">General Support / Other</option>
-                                </select>
-                            </div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="formMessage" data-i18n="lbl_message"><i class="fa-solid fa-message"></i> Detailed Message</label>
-                            <textarea id="formMessage" name="message" rows="5" placeholder="Please describe what service you require or details of your technology issues..." required class="form-input form-textarea"></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary btn-submit-glow" data-i18n="btn_send">
-                            Send Secure Request <i class="fa-solid fa-paper-plane"></i>
-                        </button>
-                        
-                        <div id="formResponse" class="form-response-msg"></div>
-                    </form>
-                </div>
+
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="services.html" class="btn btn-primary btn-glow" data-i18n="btn_view_all_services">
+                    Pogledaj Sve Usluge <i class="fa-solid fa-arrow-right"></i>
+                </a>
             </div>
-            
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Section 2: Products Preview (Gumroad 3 items & OLX 4 items with 'Pogledaj sve') -->
+    <section id="products-summary" style="padding: 100px 0; background: rgba(255, 255, 255, 0.01); border-top: 1px solid rgba(255, 255, 255, 0.05);">
+        <div class="container">
+            <div style="text-align: center; max-width: 700px; margin: 0 auto 50px;">
+                <div class="badge-container" style="justify-content: center;">
+                    <span class="hero-badge"><i class="fa-solid fa-cart-shopping pulse-icon"></i> <span data-i18n="home_products_badge">Katalog & Oprema</span></span>
+                </div>
+                <h2 style="font-size: 2.5rem; font-weight: 800; margin: 12px 0;" data-i18n="home_products_title">Digitalni Proizvodi i <span class="gradient-text">Hardver</span></h2>
+                <p style="color: var(--text-muted); font-size: 1.05rem;" data-i18n="home_products_desc">Istražite naše digitalne alate na Gumroadu ili pregledajte provjerene računare i laptope na OLX.ba platformi.</p>
+            </div>
+
+            <!-- Gumroad Instant Store Preview (3 items) -->
+            <div style="margin-bottom: 60px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; flex-wrap: wrap; gap: 16px;">
+                    <h3 style="font-size: 1.5rem; font-weight: 700;"><i class="fa-solid fa-bag-shopping color-purple"></i> <span data-i18n="tab_gumroad">Gumroad Digitalna Prodavnica</span></h3>
+                    <a href="https://aktechcraft.gumroad.com/" target="_blank" class="btn btn-secondary btn-sm">
+                        <i class="fa-solid fa-store"></i> Pogledaj Sve na Gumroad Shopu <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+                <div class="cards-grid-3" id="gumroadProductsGrid">
+                    <!-- Loaded dynamically via script.js (3 items) -->
+                </div>
+            </div>
+
+            <!-- OLX Verified Hardware Preview (4 items) -->
+            <div>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; flex-wrap: wrap; gap: 16px;">
+                    <h3 style="font-size: 1.5rem; font-weight: 700;"><i class="fa-solid fa-tag color-cyan"></i> <span data-i18n="tab_olx">OLX Računari & Oprema</span></h3>
+                    <a href="https://olx.ba/profil/AKTech" target="_blank" class="btn btn-secondary btn-sm">
+                        <i class="fa-solid fa-cart-shopping"></i> Pogledaj Sve na OLX.ba <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+                <div class="cards-grid-4" id="olxProductsGrid">
+                    <!-- Loaded dynamically via script.js (4 items) -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Apps & Downloads (Resources Preview) -->
+    <section id="resources-summary" style="padding: 100px 0; background: var(--bg-dark); border-top: 1px solid rgba(255, 255, 255, 0.05);">
+        <div class="container">
+            <div style="text-align: center; max-width: 700px; margin: 0 auto 50px;">
+                <div class="badge-container" style="justify-content: center;">
+                    <span class="hero-badge"><i class="fa-solid fa-file-arrow-down pulse-icon"></i> <span data-i18n="home_resources_badge">Besplatni Resursi</span></span>
+                </div>
+                <h2 style="font-size: 2.5rem; font-weight: 800; margin: 12px 0;" data-i18n="home_resources_title">Aplikacije i <span class="gradient-text">Preuzimanja</span></h2>
+                <p style="color: var(--text-muted); font-size: 1.05rem;" data-i18n="home_resources_desc">Preuzmite besplatne priručnike za održavanje računara, automatizovane skripte i otkrijte najbolje programe.</p>
+            </div>
+
+            <div class="cards-grid-4" id="downloadsGrid">
+                <!-- Dynamically populated from AK_DATA.downloads (Top 4 preview) -->
+            </div>
+
+            <div style="text-align: center; margin-top: 48px;">
+                <a href="downloads.html" class="btn btn-secondary">
+                    <i class="fa-solid fa-download"></i> Vidi Sve u Biblioteci Preuzimanja (Apps & Vodiči) <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Free Online Tools Preview -->
+    <section id="tools-summary" style="padding: 90px 0; background: radial-gradient(circle at 50% 50%, rgba(14, 165, 233, 0.08) 0%, rgba(3, 7, 18, 0.98) 70%); border-top: 1px solid rgba(255, 255, 255, 0.05);">
+        <div class="container">
+            <div class="glass-card" style="padding: 48px; border-radius: var(--border-radius-lg); text-align: center; max-width: 860px; margin: 0 auto; border: 1px solid rgba(14, 165, 233, 0.3); box-shadow: 0 0 35px rgba(14, 165, 233, 0.15);">
+                <div class="card-top-badge badge-cyan" style="align-self: center; margin: 0 auto 16px;"><i class="fa-solid fa-screwdriver-wrench"></i> Instant Browser Utilities</div>
+                <h2 style="font-size: 2.4rem; font-weight: 800; margin-bottom: 16px;" data-i18n="home_tools_title">Besplatni Online <span class="gradient-text">Browser Alati</span></h2>
+                <p style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.6; max-width: 680px; margin: 0 auto 32px;" data-i18n="home_tools_desc">
+                    Promijenite veličinu slika, pretvorite format (PNG/JPG/WEBP), spojite slike u PDF i izvezite PDF u slike direktno u vašem internet pregledniku bez čekanja i registracije.
+                </p>
+                <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+                    <a href="tools.html" class="btn btn-primary btn-glow" data-i18n="btn_view_all_tools">
+                        <i class="fa-solid fa-bolt"></i> Otvori Besplatne Alate
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Projects (Top 3 Applications with GitHub links) -->
+    <section id="projects" style="padding: 100px 0; background: var(--bg-dark); border-top: 1px solid rgba(255, 255, 255, 0.05);">
+        <div class="container">
+            <div style="text-align: center; max-width: 700px; margin: 0 auto 50px;">
+                <div class="badge-container" style="justify-content: center;">
+                    <span class="hero-badge"><i class="fa-solid fa-code-branch pulse-icon"></i> <span data-i18n="home_projects_badge">Portfolio & Razvoj</span></span>
+                </div>
+                <h2 style="font-size: 2.5rem; font-weight: 800; margin: 12px 0;" data-i18n="home_projects_title">Izdvojeni <span class="gradient-text">Softverski Projekti</span></h2>
+                <p style="color: var(--text-muted); font-size: 1.05rem;" data-i18n="home_projects_desc">Nedavne desktop aplikacije, web portali i sistemski alati razvijeni po najvišim standardima koda sa otvorenim repozitorijima.</p>
+            </div>
+
+            <div class="cards-grid-3" id="projectsGrid">
+                <!-- Dynamically loaded via script.js from AK_DATA.projects -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Fast Contact & CTA Banner -->
+    <section class="quick-cta-section">
+        <div class="container">
+            <div class="glass-card quick-cta-card">
+                <div class="badge-container" style="justify-content: center;">
+                    <span class="hero-badge"><i class="fa-solid fa-headset pulse-icon"></i> <span data-i18n="home_cta_badge">Brza Pomoć</span></span>
+                </div>
+                <h2 style="font-size: 2.6rem; font-weight: 800; margin: 16px 0;" data-i18n="home_cta_title">Imate Kvar ili <span class="gradient-text">Planirate Projekat?</span></h2>
+                <p style="color: var(--text-muted); font-size: 1.15rem; max-width: 680px; margin: 0 auto;" data-i18n="home_cta_desc">
+                    Javite se odmah putem WhatsAppa, Vibera ili pošaljite poruku kroz kontakt formu. Odgovaramo brzo s konkretnim rješenjem.
+                </p>
+                <div class="quick-cta-actions">
+                    <a href="https://wa.me/38761293073" target="_blank" class="btn btn-primary btn-glow btn-green">
+                        <i class="fa-brands fa-whatsapp"></i> <span data-i18n="btn_cta_whatsapp">Piši na WhatsApp</span>
+                    </a>
+                    <a href="viber://chat?number=%2B38761293073" class="btn btn-primary btn-glow btn-purple">
+                        <i class="fa-brands fa-viber"></i> <span data-i18n="btn_cta_viber">Piši na Viber</span>
+                    </a>
+                    <a href="contact.html" class="btn btn-secondary">
+                        <i class="fa-solid fa-envelope"></i> <span data-i18n="btn_cta_contact">Otvori Kontakt Formu</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer with all 6 Social Links -->
     <footer class="main-footer">
         <div class="container footer-grid">
             <div class="footer-info">
-                <a href="#" class="footer-logo">
+                <a href="index.html" class="footer-logo">
                     <img src="images/logo.png" alt="AK Tech Logo" class="footer-logo-img">
                     <span class="logo-text">AK <span class="accent-text">TECH</span></span>
                 </a>
                 <p class="footer-bio" data-i18n="footer_bio">
-                    State-of-the-art computer diagnostics, precision microscopic motherboard repairs, high-fidelity gaming systems, clean software optimizations, and highly robust custom applications.
+                    Precizna dijagnostika računara, mikroskopsko lemljenje matičnih ploča, sklapanje custom računara, optimizacija sistema i izrada softvera po mjeri.
                 </p>
                 <div class="footer-contact-details">
-                    <span><i class="fa-solid fa-phone"></i> +387 60 000 000</span>
-                    <span><i class="fa-solid fa-envelope"></i> info@aktech.work</span>
+                    <span><i class="fa-solid fa-phone"></i> +387 61 293 073</span>
+                    <span><i class="fa-solid fa-envelope"></i> support@aktech.work</span>
                 </div>
             </div>
             
             <div class="footer-nav">
-                <h3 class="footer-heading" data-i18n="footer_heading_services">Services</h3>
+                <h3 class="footer-heading" data-i18n="footer_heading_services">Usluge</h3>
                 <ul class="footer-links">
-                    <li><a href="#repair" data-i18n="footer_link_repair">Laptop & PC Repair</a></li>
-                    <li><a href="#sales" data-i18n="footer_link_sales">Custom PC Assemblies</a></li>
-                    <li><a href="#software" data-i18n="footer_link_software">Software Optimization</a></li>
-                    <li><a href="#appdev" data-i18n="footer_link_appdev">Custom Development</a></li>
+                    <li><a href="services.html#desktop-dev">Desktop Aplikacije</a></li>
+                    <li><a href="services.html#web-dev">Web Stranice & Aplikacije</a></li>
+                    <li><a href="services.html#maintenance">Servis Računara & Laptopa</a></li>
+                    <li><a href="services.html#os-tuning">Optimizacija Sistema</a></li>
                 </ul>
             </div>
             
             <div class="footer-nav">
-                <h3 class="footer-heading" data-i18n="footer_heading_navigation">Navigation</h3>
+                <h3 class="footer-heading" data-i18n="footer_heading_navigation">Navigacija</h3>
                 <ul class="footer-links">
-                    <li><a href="#hero" data-i18n="footer_nav_home">Home</a></li>
-                    <li><a href="#repair" data-i18n="footer_nav_solutions">Core Solutions</a></li>
-                    <li><a href="#contact" data-i18n="footer_nav_contact">Contact Support</a></li>
-                    <li><a href="#contact" data-i18n="footer_nav_quote">Get Quote</a></li>
+                    <li><a href="services.html">Usluge</a></li>
+                    <li><a href="products.html">Proizvodi & OLX</a></li>
+                    <li><a href="resources.html">Resursi & Preuzimanja</a></li>
+                    <li><a href="tools.html">Besplatni Online Alati</a></li>
+                    <li><a href="about.html">O nama</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
                 </ul>
             </div>
             
             <div class="footer-hours">
-                <h3 class="footer-heading" data-i18n="footer_heading_hours">Business Hours</h3>
+                <h3 class="footer-heading" data-i18n="footer_hours">Radno Vrijeme</h3>
                 <ul class="hours-list">
-                    <li><span data-i18n="day_mon_fri">Monday - Friday</span> <span>08:00 AM - 06:00 PM</span></li>
-                    <li><span data-i18n="day_sat">Saturday</span> <span>09:00 AM - 04:00 PM</span></li>
-                    <li><span data-i18n="day_sun">Sunday</span> <span class="closed-label" data-i18n="closed">Closed</span></li>
+                    <li><span data-i18n="day_mon_fri">Ponedjeljak - Petak</span> <span>08:00 - 18:00</span></li>
+                    <li><span data-i18n="day_sat">Subota</span> <span>09:00 - 16:00</span></li>
+                    <li><span data-i18n="day_sun">Nedjelja</span> <span class="closed-label" data-i18n="closed">Zatvoreno</span></li>
                 </ul>
             </div>
         </div>
         
         <div class="footer-copyright container">
-            <p data-i18n="copyright">&copy; 2026 AK Tech. All Rights Reserved. Designed & Engineered with premium responsive glassmorphism.</p>
+            <p data-i18n="copyright">&copy; 2026 AK Tech. Sva prava zadržana. Inženjering s preciznošću.</p>
             <div class="footer-social-links">
-                <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://github.com/KadricAl" target="_blank" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://olx.ba/profil/AKTech" target="_blank" aria-label="OLX" title="OLX Shop"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="https://aktechcraft.gumroad.com/" target="_blank" aria-label="Gumroad" title="Gumroad Store"><i class="fa-solid fa-bag-shopping"></i></a>
+                <a href="https://www.facebook.com/share/1A7irGQCFo/?mibextid=wwXIfr" target="_blank" aria-label="Facebook" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://youtube.com/@aktechvers?si=SF_6i_wLMFAemTBW" target="_blank" aria-label="YouTube" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/ak.tech.verse?exln=N3piMXA0NmQ5NzFv&utm_source=qr" target="_blank" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
             </div>
         </div>
     </footer>
 
-    <!-- Floating Quick Support Badge Widget (Almir Reference Style) -->
+    <!-- Floating Support Bar -->
     <div class="floating-support-bar">
-        <a href="https://wa.me/38760000000" target="_blank" class="float-item float-whatsapp" title="WhatsApp Chat">
+        <a href="https://wa.me/38761293073" target="_blank" class="float-item float-whatsapp" title="WhatsApp Chat">
             <i class="fa-brands fa-whatsapp"></i>
-            <span class="float-label"><strong data-i18n="channel_whatsapp">WhatsApp Chat</strong><br><span data-i18n="float_wa_desc">Replies in minutes</span></span>
+            <span class="float-label"><strong data-i18n="float_wa_title">WhatsApp Chat</strong><br><span data-i18n="float_wa_desc">Odgovor u par minuta</span></span>
         </a>
-        <a href="viber://chat?number=%2B38760000000" class="float-item float-viber" title="Viber Support">
+        <a href="viber://chat?number=%2B38761293073" class="float-item float-viber" title="Viber Podrška">
             <i class="fa-brands fa-viber"></i>
-            <span class="float-label"><strong data-i18n="channel_viber">Viber Support</strong><br><span data-i18n="float_viber_desc">Instant message</span></span>
+            <span class="float-label"><strong data-i18n="float_viber_title">Viber Podrška</strong><br><span data-i18n="float_viber_desc">Brza poruka</span></span>
         </a>
-        <a href="tel:+38760000000" class="float-item float-call" title="Call Direct">
+        <a href="tel:+38761293073" class="float-item float-call" title="Pozovi Direktno">
             <i class="fa-solid fa-phone"></i>
-            <span class="float-label"><strong>Call Direct</strong><br><span data-i18n="float_call_desc">Available 8 AM - 6 PM</span></span>
+            <span class="float-label"><strong data-i18n="float_call_title">Pozovi Direktno</strong><br><span data-i18n="float_call_desc">Pon - Sub 08-18h</span></span>
         </a>
     </div>
 
     <!-- Scripts -->
+    <script src="script/data.js"></script>
     <script src="script/translations.js"></script>
     <script src="script/script.js"></script>
 </body>
