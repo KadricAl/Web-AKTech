@@ -61,33 +61,81 @@ document.addEventListener("DOMContentLoaded", () => {
        3. Mobile Navigation & Dropdown Accordion
        ---------------------------------------------------------------------- */
     if (mobileToggle && navMenu) {
-        mobileToggle.addEventListener("click", () => {
+        const closeMobileNav = () => {
+            navMenu.classList.remove("open");
+            mobileToggle.classList.remove("open");
+            document.body.style.overflow = "initial";
+        };
+
+        const toggleMobileNav = () => {
             const isOpen = navMenu.classList.toggle("open");
             mobileToggle.classList.toggle("open");
             document.body.style.overflow = isOpen ? "hidden" : "initial";
+        };
+
+        mobileToggle.addEventListener("click", (e) => {
+            e.stopPropagation();
+            toggleMobileNav();
         });
 
-        navLinks.forEach(link => {
-            if (!link.classList.contains("dropdown-toggle-link")) {
-                link.addEventListener("click", () => {
-                    navMenu.classList.remove("open");
-                    mobileToggle.classList.remove("open");
-                    document.body.style.overflow = "initial";
-                });
-            }
+        // Close mobile nav when clicking any navigable link (including dropdown sublinks)
+        const allNavLinks = document.querySelectorAll(".nav-link:not(.dropdown-toggle-link), .nav-dropdown-link");
+        allNavLinks.forEach(link => {
+            link.addEventListener("click", () => {
+                if (window.innerWidth <= 1024) {
+                    closeMobileNav();
+                }
+            });
         });
 
+        // Accordion behavior on mobile for dropdown headers
         const dropdownToggles = document.querySelectorAll(".dropdown-toggle-link");
         dropdownToggles.forEach(toggle => {
             toggle.addEventListener("click", (e) => {
                 if (window.innerWidth <= 1024) {
                     e.preventDefault();
+                    e.stopPropagation();
                     const parent = toggle.closest(".nav-item-dropdown");
                     if (parent) {
-                        parent.classList.toggle("mobile-open");
+                        const isCurrentlyOpen = parent.classList.contains("mobile-open");
+                        // Close any other open dropdowns for a clean accordion experience
+                        document.querySelectorAll(".nav-item-dropdown.mobile-open").forEach(other => {
+                            if (other !== parent) {
+                                other.classList.remove("mobile-open");
+                            }
+                        });
+                        parent.classList.toggle("mobile-open", !isCurrentlyOpen);
                     }
                 }
             });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener("click", (e) => {
+            if (window.innerWidth <= 1024 && navMenu.classList.contains("open")) {
+                if (!navMenu.contains(e.target) && !mobileToggle.contains(e.target)) {
+                    closeMobileNav();
+                }
+            }
+        });
+
+        // Close on ESC key
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape" && navMenu.classList.contains("open")) {
+                closeMobileNav();
+            }
+        });
+
+        // Viewport resize cleanup
+        window.addEventListener("resize", () => {
+            if (window.innerWidth > 1024) {
+                if (navMenu.classList.contains("open")) {
+                    closeMobileNav();
+                }
+                document.querySelectorAll(".nav-item-dropdown.mobile-open").forEach(item => {
+                    item.classList.remove("mobile-open");
+                });
+            }
         });
 
         // Desktop Hover Intent & Delay for Dropdowns (Prevents premature closing)

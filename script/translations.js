@@ -15,6 +15,7 @@ const translations = {
 
         // Dropdown Titles
         dropdown_services: "Our Services",
+        dropdown_all_services: "All Services (Overview)",
         dropdown_resources: "Resources & Downloads",
         dropdown_products: "Shop & Products",
 
@@ -185,6 +186,7 @@ const translations = {
 
         // Dropdown Titles
         dropdown_services: "Naše Usluge",
+        dropdown_all_services: "Sve Usluge (Pregled)",
         dropdown_resources: "Resursi & Preuzimanja",
         dropdown_products: "Katalog Proizvoda",
 
