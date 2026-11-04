@@ -225,13 +225,13 @@ window.AK_DATA = {
         {
             id: "dl-doc-4",
             category: "doc",
-            title: "Vodič za sigurnost podataka & Anti-Ransomware",
+            title: "Sigurnost na Windows-u: Zaštita Sistema & Prevencija Prijetnji",
             type: "PDF Dokument",
-            fileSize: "1.9 MB",
-            version: "v1.0",
+            fileSize: "830 KB",
+            version: "2026 Izdanje",
             filePath: "downloads/sigurnost-i-zastita-podataka.pdf",
-            description_bs: "Strategija 3-2-1 backupa, sigurno enkriptovanje privatnih fajlova i zaštita od kripto-ucjenjivača.",
-            description_en: "The 3-2-1 backup blueprint, offline file encryption, and practical defense against ransomware."
+            description_bs: "Oficijelni vodič za zaštitu Windowsa: Core Isolation, Defender Tamper Protection, BitLocker, Passkeys, Sysinternals i 6 zlatnih pravila digitalne higijene.",
+            description_en: "Official Windows security guide: Core Isolation, Defender Tamper Protection, BitLocker, Passkeys, Sysinternals, and 6 essential digital hygiene rules."
         },
 
         // B. Aplikacije & ZIP Arhive
