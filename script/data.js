@@ -15,7 +15,8 @@ window.AK_CONFIG = {
     olxShop: "https://olx.ba/profil/AKTech",
     gumroadShop: "https://aktechcraft.gumroad.com/",
     facebook: "https://www.facebook.com/share/1A7irGQCFo/?mibextid=wwXIfr",
-    youtube: "https://youtube.com/@aktechvers?si=SF_6i_wLMFAemTBW"
+    youtube: "https://youtube.com/@aktechvers?si=SF_6i_wLMFAemTBW",
+    threads: "https://www.threads.com/@ak.tech.verse?igshid=NTc4MTIwNjQ2YQ=="
 };
 
 window.AK_DATA = {

@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zvanični Linkovi & Društvene Mreže | AK Tech Share Hub</title>
+    <meta name="description" content="Svi zvanični linkovi, profili na društvenim mrežama, online trgovine (OLX, Gumroad) i direktni kontakt kanali AK Tech-a na jednom mjestu.">
+    <meta name="keywords" content="ak tech linkovi, ak tech drustvene mreze, instagram, threads, github, olx shop, gumroad, whatsapp kontakt">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="author" content="AK TECH">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://aktech.work/links.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aktech.work/links.html">
+    <meta property="og:title" content="Zvanični Linkovi & Društvene Mreže | AK Tech">
+    <meta property="og:description" content="Povežite se s nama na svim društvenim mrežama, trgovinama i komunikacijskim kanalima.">
+    <meta property="og:image" content="https://aktech.work/images/logo.png">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Zvanični Linkovi & Društvene Mreže | AK Tech">
+    <meta name="twitter:description" content="Svi zvanični profili, repozitoriji i kontakt kanali AK Tech-a.">
+    <meta name="twitter:image" content="https://aktech.work/images/logo.png">
+
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- QRCode.js Library for client-side QR generation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body class="dark-theme">
+
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo-area">
+                <img src="images/logo.png" alt="AK Tech Logo" class="nav-logo">
+                <span class="logo-text">AK <span class="accent-text">TECH</span></span>
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link" data-i18n="nav_home">Početna</a></li>
+                    
+                    <!-- Services Dropdown -->
+                    <li class="nav-item-dropdown">
+                        <a href="services.html" class="nav-link dropdown-toggle-link">
+                            <span data-i18n="nav_services">Usluge</span>
+                            <i class="fa-solid fa-chevron-down dropdown-icon-chevron"></i>
+                        </a>
+                        <ul class="nav-dropdown-menu">
+                            <li><a href="services.html" class="nav-dropdown-link" style="color: var(--color-cyan); font-weight: 600;"><i class="fa-solid fa-layer-group"></i> <span data-i18n="sub_all_services">Sve Usluge (Pregled)</span></a></li>
+                            <li><a href="services.html#desktop-dev" class="nav-dropdown-link"><i class="fa-solid fa-laptop-code"></i> <span data-i18n="sub_desktop_dev">Desktop Aplikacije</span></a></li>
+                            <li><a href="services.html#web-dev" class="nav-dropdown-link"><i class="fa-solid fa-globe"></i> <span data-i18n="sub_web_dev">Web & Landing Stranice</span></a></li>
+                            <li><a href="services.html#android-dev" class="nav-dropdown-link"><i class="fa-brands fa-android"></i> <span data-i18n="sub_android_dev">Android Aplikacije</span></a></li>
+                            <li><a href="services.html#debugging" class="nav-dropdown-link"><i class="fa-solid fa-bug-slash"></i> <span data-i18n="sub_debugging">Debug & Fix Koda</span></a></li>
+                            <li><a href="services.html#photo-design" class="nav-dropdown-link"><i class="fa-solid fa-image"></i> <span data-i18n="sub_photo_design">Obrada Fotografija</span></a></li>
+                            <li><a href="services.html#video-social" class="nav-dropdown-link"><i class="fa-solid fa-clapperboard"></i> <span data-i18n="sub_video_social">Video & Social Media</span></a></li>
+                            <li><a href="services.html#maintenance" class="nav-dropdown-link"><i class="fa-solid fa-screwdriver-wrench"></i> <span data-i18n="sub_maintenance">Servis & Održavanje</span></a></li>
+                            <li><a href="services.html#os-tuning" class="nav-dropdown-link"><i class="fa-solid fa-gauge-high"></i> <span data-i18n="sub_os_tuning">Instalacija & Podešavanje OS</span></a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Apps & Downloads Dropdown -->
+                    <li class="nav-item-dropdown">
+                        <a href="resources.html" class="nav-link dropdown-toggle-link">
+                            <span data-i18n="nav_resources">Aplikacije & Resursi</span>
+                            <i class="fa-solid fa-chevron-down dropdown-icon-chevron"></i>
+                        </a>
+                        <ul class="nav-dropdown-menu">
+                            <li><a href="resources.html" class="nav-dropdown-link"><i class="fa-solid fa-folder-open"></i> <span data-i18n="sub_all_resources">Svi Resursi & Vodiči</span></a></li>
+                            <li><a href="downloads.html" class="nav-dropdown-link"><i class="fa-solid fa-download"></i> <span data-i18n="sub_downloads">Biblioteka Preuzimanja</span></a></li>
+                            <li><a href="resources.html#open-source" class="nav-dropdown-link"><i class="fa-solid fa-code"></i> <span data-i18n="sub_open_source">Open-Source Programi</span></a></li>
+                            <li><a href="resources.html#ai-tools" class="nav-dropdown-link"><i class="fa-solid fa-wand-magic-sparkles"></i> <span data-i18n="sub_ai_tools">Preporučeni AI Alati</span></a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Products Dropdown -->
+                    <li class="nav-item-dropdown">
+                        <a href="products.html" class="nav-link dropdown-toggle-link">
+                            <span data-i18n="nav_products">Proizvodi</span>
+                            <i class="fa-solid fa-chevron-down dropdown-icon-chevron"></i>
+                        </a>
+                        <ul class="nav-dropdown-menu">
+                            <li><a href="products.html" class="nav-dropdown-link"><i class="fa-solid fa-boxes-stacked"></i> <span data-i18n="sub_all_products">Katalog Proizvoda</span></a></li>
+                            <li><a href="gumroad-products.html" class="nav-dropdown-link"><i class="fa-solid fa-store"></i> <span data-i18n="sub_gumroad">Gumroad Prodavnica</span></a></li>
+                            <li><a href="products.html#olx" class="nav-dropdown-link"><i class="fa-solid fa-cart-shopping"></i> <span data-i18n="sub_olx">OLX Računari & Oprema</span></a></li>
+                            <li><a href="products.html#group-devices" class="nav-dropdown-link"><i class="fa-solid fa-laptop"></i> <span data-i18n="sub_group_devices">Grupna Ponuda Uređaja</span></a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="tools.html" class="nav-link" data-i18n="nav_tools">Besplatni Alati</a></li>
+                    <li><a href="links.html" class="nav-link active" data-i18n="nav_links_hub">Linkovi & Profili</a></li>
+                    <li><a href="index.html#projects" class="nav-link" data-i18n="nav_projects">Projekti</a></li>
+                    <li><a href="about.html" class="nav-link" data-i18n="nav_about">O nama</a></li>
+                    <li><a href="contact.html" class="nav-link contact-btn-link" data-i18n="nav_contact">Kontakt</a></li>
+                </ul>
+            </nav>
+            
+            <div class="nav-actions">
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="bs">BS</button>
+                    <span class="lang-divider">|</span>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+                
+                <a href="contact.html" class="btn btn-nav-cta" data-i18n="btn_get_quote">Zatraži Ponudu</a>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Subpage Hero -->
+    <section class="subpage-hero" style="background: radial-gradient(circle at 50% 20%, rgba(14, 165, 233, 0.16) 0%, rgba(3, 7, 18, 0.98) 75%);">
+        <div class="container subpage-hero-content" style="max-width: 800px;">
+            <div class="badge-container" style="justify-content: center;">
+                <span class="hero-badge"><i class="fa-solid fa-circle-check pulse-icon"></i> <span data-i18n="links_hero_badge">Zvanični AK Tech Kanali</span></span>
+            </div>
+            <h1 class="subpage-title" data-i18n="links_page_title">AK Tech Zvanični Linkovi & Društvene Mreže</h1>
+            <p class="subpage-desc" data-i18n="links_page_desc">
+                Direktan pristup svim zvaničnim profilima, online prodavnicama i kontakt kanalima AK Tech-a na jednom mjestu. Otvorite profil, kopirajte link ili skenirajte QR kod.
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content: Vertical Links List -->
+    <main class="container" style="padding: 40px 16px 100px;">
+        <div class="links-hub-container">
+
+            <!-- 1. GitHub -->
+            <div class="link-row-card">
+                <div class="link-row-header">
+                    <a href="https://github.com/KadricAl" target="_blank" rel="noopener noreferrer" class="link-main-anchor">
+                        <div class="link-brand-icon icon-github">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <div class="link-text-content">
+                            <h2 class="link-title" data-i18n="link_github_title">GitHub Profil & Repozitoriji</h2>
+                            <p class="link-handle" data-i18n="link_github_desc">github.com/KadricAl • Open-source projekti i kod</p>
+                        </div>
+                        <div class="link-external-icon">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </a>
+                    <div class="link-actions-group">
+                        <button type="button" class="btn-link-action btn-copy-link" data-url="https://github.com/KadricAl" title="Kopiraj Link">
+                            <i class="fa-solid fa-copy"></i>
+                            <span data-i18n="btn_copy_link">Kopiraj Link</span>
+                        </button>
+                        <button type="button" class="btn-link-action btn-qr-link" data-url="https://github.com/KadricAl" data-title="GitHub" title="Prikaži QR">
+                            <i class="fa-solid fa-qrcode"></i>
+                            <span data-i18n="btn_show_qr">Prikaži QR</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="qr-drawer">
+                    <div class="qr-drawer-inner">
+                        <div class="qr-canvas-box"></div>
+                        <div class="qr-meta">
+                            <p class="qr-prompt" data-i18n="qr_scan_prompt">Skenirajte kamerom vašeg telefona:</p>
+                            <code class="qr-url-badge">https://github.com/KadricAl</code>
+                            <div class="qr-cta-row">
+                                <a href="https://github.com/KadricAl" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" data-i18n="btn_open_link">Otvori Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. OLX Shop -->
+            <div class="link-row-card">
+                <div class="link-row-header">
+                    <a href="https://olx.ba/profil/AKTech" target="_blank" rel="noopener noreferrer" class="link-main-anchor">
+                        <div class="link-brand-icon icon-olx">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <div class="link-text-content">
+                            <h2 class="link-title" data-i18n="link_olx_title">OLX Prodavnica & Računari</h2>
+                            <p class="link-handle" data-i18n="link_olx_desc">olx.ba/profil/AKTech • Provjereni PC, laptopi i oprema</p>
+                        </div>
+                        <div class="link-external-icon">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </a>
+                    <div class="link-actions-group">
+                        <button type="button" class="btn-link-action btn-copy-link" data-url="https://olx.ba/profil/AKTech" title="Kopiraj Link">
+                            <i class="fa-solid fa-copy"></i>
+                            <span data-i18n="btn_copy_link">Kopiraj Link</span>
+                        </button>
+                        <button type="button" class="btn-link-action btn-qr-link" data-url="https://olx.ba/profil/AKTech" data-title="OLX Shop" title="Prikaži QR">
+                            <i class="fa-solid fa-qrcode"></i>
+                            <span data-i18n="btn_show_qr">Prikaži QR</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="qr-drawer">
+                    <div class="qr-drawer-inner">
+                        <div class="qr-canvas-box"></div>
+                        <div class="qr-meta">
+                            <p class="qr-prompt" data-i18n="qr_scan_prompt">Skenirajte kamerom vašeg telefona:</p>
+                            <code class="qr-url-badge">https://olx.ba/profil/AKTech</code>
+                            <div class="qr-cta-row">
+                                <a href="https://olx.ba/profil/AKTech" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" data-i18n="btn_open_link">Otvori Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Gumroad Store -->
+            <div class="link-row-card">
+                <div class="link-row-header">
+                    <a href="https://aktechcraft.gumroad.com/" target="_blank" rel="noopener noreferrer" class="link-main-anchor">
+                        <div class="link-brand-icon icon-gumroad">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <div class="link-text-content">
+                            <h2 class="link-title" data-i18n="link_gumroad_title">Gumroad Digitalna Prodavnica</h2>
+                            <p class="link-handle" data-i18n="link_gumroad_desc">aktechcraft.gumroad.com • Digitalni vodiči, alati i skripte</p>
+                        </div>
+                        <div class="link-external-icon">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </a>
+                    <div class="link-actions-group">
+                        <button type="button" class="btn-link-action btn-copy-link" data-url="https://aktechcraft.gumroad.com/" title="Kopiraj Link">
+                            <i class="fa-solid fa-copy"></i>
+                            <span data-i18n="btn_copy_link">Kopiraj Link</span>
+                        </button>
+                        <button type="button" class="btn-link-action btn-qr-link" data-url="https://aktechcraft.gumroad.com/" data-title="Gumroad Store" title="Prikaži QR">
+                            <i class="fa-solid fa-qrcode"></i>
+                            <span data-i18n="btn_show_qr">Prikaži QR</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="qr-drawer">
+                    <div class="qr-drawer-inner">
+                        <div class="qr-canvas-box"></div>
+                        <div class="qr-meta">
+                            <p class="qr-prompt" data-i18n="qr_scan_prompt">Skenirajte kamerom vašeg telefona:</p>
+                            <code class="qr-url-badge">https://aktechcraft.gumroad.com/</code>
+                            <div class="qr-cta-row">
+                                <a href="https://aktechcraft.gumroad.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" data-i18n="btn_open_link">Otvori Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Instagram -->
+            <div class="link-row-card">
+                <div class="link-row-header">
+                    <a href="https://www.instagram.com/ak.tech.verse?exln=N3piMXA0NmQ5NzFv&utm_source=qr" target="_blank" rel="noopener noreferrer" class="link-main-anchor">
+                        <div class="link-brand-icon icon-instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div class="link-text-content">
+                            <h2 class="link-title" data-i18n="link_instagram_title">Instagram (@ak.tech.verse)</h2>
+                            <p class="link-handle" data-i18n="link_instagram_desc">Reels snimci popravki, novosti i hardver testovi</p>
+                        </div>
+                        <div class="link-external-icon">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </a>
+                    <div class="link-actions-group">
+                        <button type="button" class="btn-link-action btn-copy-link" data-url="https://www.instagram.com/ak.tech.verse?exln=N3piMXA0NmQ5NzFv&utm_source=qr" title="Kopiraj Link">
+                            <i class="fa-solid fa-copy"></i>
+                            <span data-i18n="btn_copy_link">Kopiraj Link</span>
+                        </button>
+                        <button type="button" class="btn-link-action btn-qr-link" data-url="https://www.instagram.com/ak.tech.verse?exln=N3piMXA0NmQ5NzFv&utm_source=qr" data-title="Instagram" title="Prikaži QR">
+                            <i class="fa-solid fa-qrcode"></i>
+                            <span data-i18n="btn_show_qr">Prikaži QR</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="qr-drawer">
+                    <div class="qr-drawer-inner">
+                        <div class="qr-canvas-box"></div>
+                        <div class="qr-meta">
+                            <p class="qr-prompt" data-i18n="qr_scan_prompt">Skenirajte kamerom vašeg telefona:</p>
+                            <code class="qr-url-badge">instagram.com/ak.tech.verse</code>
+                            <div class="qr-cta-row">
+                                <a href="https://www.instagram.com/ak.tech.verse?exln=N3piMXA0NmQ5NzFv&utm_source=qr" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" data-i18n="btn_open_link">Otvori Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. Threads -->
+            <div class="link-row-card">
+                <div class="link-row-header">
+                    <a href="https://www.threads.com/@ak.tech.verse?igshid=NTc4MTIwNjQ2YQ==" target="_blank" rel="noopener noreferrer" class="link-main-anchor">
+                        <div class="link-brand-icon icon-threads">
+                            <i class="fa-brands fa-threads"></i>
+                        </div>
+                        <div class="link-text-content">
+                            <h2 class="link-title" data-i18n="link_threads_title">Threads (@ak.tech.verse)</h2>
+                            <p class="link-handle" data-i18n="link_threads_desc">Kratke IT vijesti, savjeti i diskusije o razvoju</p>
+                        </div>
+                        <div class="link-external-icon">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </a>
+                    <div class="link-actions-group">
+                        <button type="button" class="btn-link-action btn-copy-link" data-url="https://www.threads.com/@ak.tech.verse?igshid=NTc4MTIwNjQ2YQ==" title="Kopiraj Link">
+                            <i class="fa-solid fa-copy"></i>
+                            <span data-i18n="btn_copy_link">Kopiraj Link</span>
+                        </button>
+                        <button type="button" class="btn-link-action btn-qr-link" data-url="https://www.threads.com/@ak.tech.verse?igshid=NTc4MTIwNjQ2YQ==" data-title="Threads" title="Prikaži QR">
+                            <i class="fa-solid fa-qrcode"></i>
+                            <span data-i18n="btn_show_qr">Prikaži QR</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="qr-drawer">
+                    <div class="qr-drawer-inner">
+                        <div class="qr-canvas-box"></div>
+                        <div class="qr-meta">
+                            <p class="qr-prompt" data-i18n="qr_scan_prompt">Skenirajte kamerom vašeg telefona:</p>
+                            <code class="qr-url-badge">threads.com/@ak.tech.verse</code>
+                            <div class="qr-cta-row">
+                                <a href="https://www.threads.com/@ak.tech.verse?igshid=NTc4MTIwNjQ2YQ==" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" data-i18n="btn_open_link">Otvori Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. Facebook -->
+            <div class="link-row-card">
+                <div class="link-row-header">
+                    <a href="https://www.facebook.com/share/1A7irGQCFo/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="link-main-anchor">
+                        <div class="link-brand-icon icon-facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                        <div class="link-text-content">
+                            <h2 class="link-title" data-i18n="link_facebook_title">Facebook Zvanična Stranica</h2>
+                            <p class="link-handle" data-i18n="link_facebook_desc">AK Tech zajednica, objave projekata i recenzije</p>
+                        </div>
+                        <div class="link-external-icon">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </a>
+                    <div class="link-actions-group">
+                        <button type="button" class="btn-link-action btn-copy-link" data-url="https://www.facebook.com/share/1A7irGQCFo/?mibextid=wwXIfr" title="Kopiraj Link">
+                            <i class="fa-solid fa-copy"></i>
+                            <span data-i18n="btn_copy_link">Kopiraj Link</span>
+                        </button>
+                        <button type="button" class="btn-link-action btn-qr-link" data-url="https://www.facebook.com/share/1A7irGQCFo/?mibextid=wwXIfr" data-title="Facebook" title="Prikaži QR">
+                            <i class="fa-solid fa-qrcode"></i>
+                            <span data-i18n="btn_show_qr">Prikaži QR</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="qr-drawer">
+                    <div class="qr-drawer-inner">
+                        <div class="qr-canvas-box"></div>
+                        <div class="qr-meta">
+                            <p class="qr-prompt" data-i18n="qr_scan_prompt">Skenirajte kamerom vašeg telefona:</p>
+                            <code class="qr-url-badge">facebook.com/aktech</code>
+                            <div class="qr-cta-row">
+                                <a href="https://www.facebook.com/share/1A7irGQCFo/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" data-i18n="btn_open_link">Otvori Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7. YouTube -->
+            <div class="link-row-card">
+                <div class="link-row-header">
+                    <a href="https://youtube.com/@aktechvers?si=SF_6i_wLMFAemTBW" target="_blank" rel="noopener noreferrer" class="link-main-anchor">
+                        <div class="link-brand-icon icon-youtube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                        <div class="link-text-content">
+                            <h2 class="link-title" data-i18n="link_youtube_title">YouTube Kanal (@aktechvers)</h2>
+                            <p class="link-handle" data-i18n="link_youtube_desc">Video vodiči, recenzije mašina i tutorijali</p>
+                        </div>
+                        <div class="link-external-icon">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </a>
+                    <div class="link-actions-group">
+                        <button type="button" class="btn-link-action btn-copy-link" data-url="https://youtube.com/@aktechvers?si=SF_6i_wLMFAemTBW" title="Kopiraj Link">
+                            <i class="fa-solid fa-copy"></i>
+                            <span data-i18n="btn_copy_link">Kopiraj Link</span>
+                        </button>
+                        <button type="button" class="btn-link-action btn-qr-link" data-url="https://youtube.com/@aktechvers?si=SF_6i_wLMFAemTBW" data-title="YouTube" title="Prikaži QR">
+                            <i class="fa-solid fa-qrcode"></i>
+                            <span data-i18n="btn_show_qr">Prikaži QR</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="qr-drawer">
+                    <div class="qr-drawer-inner">
+                        <div class="qr-canvas-box"></div>
+                        <div class="qr-meta">
+                            <p class="qr-prompt" data-i18n="qr_scan_prompt">Skenirajte kamerom vašeg telefona:</p>
+                            <code class="qr-url-badge">youtube.com/@aktechvers</code>
+                            <div class="qr-cta-row">
+                                <a href="https://youtube.com/@aktechvers?si=SF_6i_wLMFAemTBW" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" data-i18n="btn_open_link">Otvori Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8. WhatsApp Chat -->
+            <div class="link-row-card">
+                <div class="link-row-header">
+                    <a href="https://wa.me/38761293073" target="_blank" rel="noopener noreferrer" class="link-main-anchor">
+                        <div class="link-brand-icon icon-whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div class="link-text-content">
+                            <h2 class="link-title" data-i18n="link_whatsapp_title">WhatsApp Direktni Chat</h2>
+                            <p class="link-handle" data-i18n="link_whatsapp_desc">+387 61 293 073 • Brz odgovor i narudžbe</p>
+                        </div>
+                        <div class="link-external-icon">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </a>
+                    <div class="link-actions-group">
+                        <button type="button" class="btn-link-action btn-copy-link" data-url="https://wa.me/38761293073" title="Kopiraj Link">
+                            <i class="fa-solid fa-copy"></i>
+                            <span data-i18n="btn_copy_link">Kopiraj Link</span>
+                        </button>
+                        <button type="button" class="btn-link-action btn-qr-link" data-url="https://wa.me/38761293073" data-title="WhatsApp Chat" title="Prikaži QR">
+                            <i class="fa-solid fa-qrcode"></i>
+                            <span data-i18n="btn_show_qr">Prikaži QR</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="qr-drawer">
+                    <div class="qr-drawer-inner">
+                        <div class="qr-canvas-box"></div>
+                        <div class="qr-meta">
+                            <p class="qr-prompt" data-i18n="qr_scan_prompt">Skenirajte kamerom vašeg telefona:</p>
+                            <code class="qr-url-badge">https://wa.me/38761293073</code>
+                            <div class="qr-cta-row">
+                                <a href="https://wa.me/38761293073" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" data-i18n="btn_open_link">Otvori Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9. Viber Support -->
+            <div class="link-row-card">
+                <div class="link-row-header">
+                    <a href="viber://chat?number=%2B38761293073" target="_blank" rel="noopener noreferrer" class="link-main-anchor">
+                        <div class="link-brand-icon icon-viber">
+                            <i class="fa-brands fa-viber"></i>
+                        </div>
+                        <div class="link-text-content">
+                            <h2 class="link-title" data-i18n="link_viber_title">Viber Podrška</h2>
+                            <p class="link-handle" data-i18n="link_viber_desc">+387 61 293 073 • Direktna tehnička podrška</p>
+                        </div>
+                        <div class="link-external-icon">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </a>
+                    <div class="link-actions-group">
+                        <button type="button" class="btn-link-action btn-copy-link" data-url="viber://chat?number=%2B38761293073" title="Kopiraj Link">
+                            <i class="fa-solid fa-copy"></i>
+                            <span data-i18n="btn_copy_link">Kopiraj Link</span>
+                        </button>
+                        <button type="button" class="btn-link-action btn-qr-link" data-url="viber://chat?number=%2B38761293073" data-title="Viber Chat" title="Prikaži QR">
+                            <i class="fa-solid fa-qrcode"></i>
+                            <span data-i18n="btn_show_qr">Prikaži QR</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="qr-drawer">
+                    <div class="qr-drawer-inner">
+                        <div class="qr-canvas-box"></div>
+                        <div class="qr-meta">
+                            <p class="qr-prompt" data-i18n="qr_scan_prompt">Skenirajte kamerom vašeg telefona:</p>
+                            <code class="qr-url-badge">viber://chat?number=%2B38761293073</code>
+                            <div class="qr-cta-row">
+                                <a href="viber://chat?number=%2B38761293073" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" data-i18n="btn_open_link">Otvori Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 10. Direct Call -->
+            <div class="link-row-card">
+                <div class="link-row-header">
+                    <a href="tel:+38761293073" class="link-main-anchor">
+                        <div class="link-brand-icon icon-phone">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="link-text-content">
+                            <h2 class="link-title" data-i18n="link_phone_title">Direktan Telefonski Poziv</h2>
+                            <p class="link-handle" data-i18n="link_phone_desc">+387 61 293 073 • Pon - Sub: 08:00 - 18:00</p>
+                        </div>
+                        <div class="link-external-icon">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </a>
+                    <div class="link-actions-group">
+                        <button type="button" class="btn-link-action btn-copy-link" data-url="+38761293073" title="Kopiraj Broj">
+                            <i class="fa-solid fa-copy"></i>
+                            <span data-i18n="btn_copy_link">Kopiraj Broj</span>
+                        </button>
+                        <button type="button" class="btn-link-action btn-qr-link" data-url="tel:+38761293073" data-title="Poziv" title="Prikaži QR">
+                            <i class="fa-solid fa-qrcode"></i>
+                            <span data-i18n="btn_show_qr">Prikaži QR</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="qr-drawer">
+                    <div class="qr-drawer-inner">
+                        <div class="qr-canvas-box"></div>
+                        <div class="qr-meta">
+                            <p class="qr-prompt" data-i18n="qr_scan_prompt">Skenirajte kamerom vašeg telefona:</p>
+                            <code class="qr-url-badge">+387 61 293 073</code>
+                            <div class="qr-cta-row">
+                                <a href="tel:+38761293073" class="btn btn-primary btn-sm" data-i18n="btn_call_now">Pozovi Odmah</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 11. Email -->
+            <div class="link-row-card">
+                <div class="link-row-header">
+                    <a href="mailto:support@aktech.work" class="link-main-anchor">
+                        <div class="link-brand-icon icon-email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="link-text-content">
+                            <h2 class="link-title" data-i18n="link_email_title">Zvanična Email Podrška</h2>
+                            <p class="link-handle" data-i18n="link_email_desc">support@aktech.work • Poslovni upiti i tehnička podrška</p>
+                        </div>
+                        <div class="link-external-icon">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </a>
+                    <div class="link-actions-group">
+                        <button type="button" class="btn-link-action btn-copy-link" data-url="support@aktech.work" title="Kopiraj Email">
+                            <i class="fa-solid fa-copy"></i>
+                            <span data-i18n="btn_copy_link">Kopiraj Email</span>
+                        </button>
+                        <button type="button" class="btn-link-action btn-qr-link" data-url="mailto:support@aktech.work" data-title="Email" title="Prikaži QR">
+                            <i class="fa-solid fa-qrcode"></i>
+                            <span data-i18n="btn_show_qr">Prikaži QR</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="qr-drawer">
+                    <div class="qr-drawer-inner">
+                        <div class="qr-canvas-box"></div>
+                        <div class="qr-meta">
+                            <p class="qr-prompt" data-i18n="qr_scan_prompt">Skenirajte kamerom vašeg telefona:</p>
+                            <code class="qr-url-badge">support@aktech.work</code>
+                            <div class="qr-cta-row">
+                                <a href="mailto:support@aktech.work" class="btn btn-primary btn-sm" data-i18n="btn_send_email">Pošalji Email</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 12. Official Web Portal -->
+            <div class="link-row-card">
+                <div class="link-row-header">
+                    <a href="https://aktech.work" target="_blank" rel="noopener noreferrer" class="link-main-anchor">
+                        <div class="link-brand-icon icon-web">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                        <div class="link-text-content">
+                            <h2 class="link-title" data-i18n="link_web_title">AK Tech Web Portal</h2>
+                            <p class="link-handle" data-i18n="link_web_desc">aktech.work • Glavna početna stranica i portfolio</p>
+                        </div>
+                        <div class="link-external-icon">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </a>
+                    <div class="link-actions-group">
+                        <button type="button" class="btn-link-action btn-copy-link" data-url="https://aktech.work" title="Kopiraj Link">
+                            <i class="fa-solid fa-copy"></i>
+                            <span data-i18n="btn_copy_link">Kopiraj Link</span>
+                        </button>
+                        <button type="button" class="btn-link-action btn-qr-link" data-url="https://aktech.work" data-title="AK Tech Portal" title="Prikaži QR">
+                            <i class="fa-solid fa-qrcode"></i>
+                            <span data-i18n="btn_show_qr">Prikaži QR</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="qr-drawer">
+                    <div class="qr-drawer-inner">
+                        <div class="qr-canvas-box"></div>
+                        <div class="qr-meta">
+                            <p class="qr-prompt" data-i18n="qr_scan_prompt">Skenirajte kamerom vašeg telefona:</p>
+                            <code class="qr-url-badge">https://aktech.work</code>
+                            <div class="qr-cta-row">
+                                <a href="https://aktech.work" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" data-i18n="btn_open_link">Otvori Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <a href="index.html" class="footer-logo">
+                    <img src="images/logo.png" alt="AK Tech Logo" class="footer-logo-img">
+                    <span class="logo-text">AK <span class="accent-text">TECH</span></span>
+                </a>
+                <p class="footer-bio" data-i18n="footer_bio">
+                    Precizna dijagnostika računara, mikroskopsko lemljenje matičnih ploča, sklapanje custom računara, optimizacija sistema i izrada softvera po mjeri.
+                </p>
+            </div>
+            
+            <div class="footer-nav">
+                <h3 class="footer-heading" data-i18n="footer_heading_services">Usluge</h3>
+                <ul class="footer-links">
+                    <li><a href="services.html#desktop-dev">Desktop Aplikacije</a></li>
+                    <li><a href="services.html#web-dev">Web Aplikacije</a></li>
+                    <li><a href="services.html#maintenance">Servis Računara</a></li>
+                    <li><a href="services.html#os-tuning">Optimizacija Sistema</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-nav">
+                <h3 class="footer-heading" data-i18n="footer_heading_navigation">Navigacija</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="services.html">Usluge</a></li>
+                    <li><a href="products.html">Proizvodi</a></li>
+                    <li><a href="resources.html">Resursi</a></li>
+                    <li><a href="links.html">Linkovi</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-hours">
+                <h3 class="footer-heading" data-i18n="footer_hours">Radno Vrijeme</h3>
+                <ul class="hours-list">
+                    <li><span data-i18n="day_mon_fri">Ponedjeljak - Petak</span> <span>08:00 - 18:00</span></li>
+                    <li><span data-i18n="day_sat">Subota</span> <span>09:00 - 16:00</span></li>
+                    <li><span data-i18n="day_sun">Nedjelja</span> <span class="closed-label" data-i18n="closed">Zatvoreno</span></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-copyright container">
+            <p data-i18n="copyright">&copy; 2026 AK Tech. Sva prava zadržana. Inženjering s preciznošću.</p>
+            <div class="footer-social-links">
+                <a href="https://github.com/KadricAl" target="_blank" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://olx.ba/profil/AKTech" target="_blank" aria-label="OLX" title="OLX Shop"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="https://aktechcraft.gumroad.com/" target="_blank" aria-label="Gumroad" title="Gumroad Store"><i class="fa-solid fa-bag-shopping"></i></a>
+                <a href="https://www.facebook.com/share/1A7irGQCFo/?mibextid=wwXIfr" target="_blank" aria-label="Facebook" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://youtube.com/@aktechvers?si=SF_6i_wLMFAemTBW" target="_blank" aria-label="YouTube" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/ak.tech.verse?exln=N3piMXA0NmQ5NzFv&utm_source=qr" target="_blank" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.threads.com/@ak.tech.verse?igshid=NTc4MTIwNjQ2YQ==" target="_blank" aria-label="Threads" title="Threads"><i class="fa-brands fa-threads"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Support Bar -->
+    <div class="floating-support-bar">
+        <a href="https://wa.me/38761293073" target="_blank" class="float-item float-whatsapp" title="WhatsApp Chat">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="float-label"><strong data-i18n="float_wa_title">WhatsApp Chat</strong><br><span data-i18n="float_wa_desc">Odgovor u par minuta</span></span>
+        </a>
+        <a href="viber://chat?number=%2B38761293073" class="float-item float-viber" title="Viber Podrška">
+            <i class="fa-brands fa-viber"></i>
+            <span class="float-label"><strong data-i18n="float_viber_title">Viber Podrška</strong><br><span data-i18n="float_viber_desc">Brza poruka</span></span>
+        </a>
+        <a href="tel:+38761293073" class="float-item float-call" title="Pozovi Direktno">
+            <i class="fa-solid fa-phone"></i>
+            <span class="float-label"><strong data-i18n="float_call_title">Pozovi Direktno</strong><br><span data-i18n="float_call_desc">Pon - Sub 08-18h</span></span>
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script/data.js"></script>
+    <script src="script/translations.js"></script>
+    <script src="script/script.js"></script>
+    <script src="script/links.js"></script>
+</body>
+</html>
