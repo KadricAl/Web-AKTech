@@ -205,11 +205,11 @@ window.AK_DATA = {
             category: "doc",
             title: "Vodič za pravilno održavanje i čišćenje računara",
             type: "PDF Dokument",
-            fileSize: "3.4 MB",
+            fileSize: "670 KB",
             version: "2026 Izdanje",
             filePath: "downloads/vodic-odrzavanje-racunara-aktech.pdf",
-            description_bs: "Ilustrovani priručnik: kada mijenjati termalnu pastu, kako očistiti ventilatore i spriječiti termalni throttling.",
-            description_en: "Illustrated handbook: when to replace thermal paste, fan dust maintenance, and thermal throttle prevention."
+            description_bs: "Oficijelni AK Tech servisni priručnik na 2 strane: zamjena termalne paste, čišćenje ventilatora, očuvanje baterije i 6 zlatnih servisnih pravila.",
+            description_en: "Official AK Tech 2-page hardware maintenance handbook: thermal paste replacement, fan cleaning, battery preservation, and 6 essential rules."
         },
         {
             id: "dl-doc-3",
