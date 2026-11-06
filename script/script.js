@@ -203,7 +203,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         </div>
                         <div class="olx-actions-grid">
                             <a href="${item.olxUrl}" target="_blank" class="btn btn-primary btn-glow btn-sm card-action-btn" title="Pogledaj artikal na OLX.ba">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i> ${isBs ? "Otvori na OLX" : "View on OLX"}
+                                <img src="images/icons/olx.svg" alt="OLX" class="btn-brand-icon"> ${isBs ? "Otvori na OLX" : "View on OLX"}
                             </a>
                             <a href="https://wa.me/38761293073?text=${encodeURIComponent(item.whatsappText)}" target="_blank" class="btn btn-secondary btn-sm card-action-btn" title="Pošalji upit za artikal">
                                 <i class="fa-brands fa-whatsapp color-green"></i> ${isBs ? "Pitaj" : "Ask"}
@@ -284,7 +284,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         </div>
                         <div class="group-actions-grid">
                             <a href="https://olx.ba/profil/AKTech" target="_blank" class="btn btn-secondary btn-sm card-action-btn" title="Pogledaj OLX Ponudu">
-                                <i class="fa-solid fa-cart-shopping"></i> OLX Shop
+                                <img src="images/icons/olx.svg" alt="OLX" class="btn-brand-icon"> OLX Shop
                             </a>
                             <a href="https://wa.me/38761293073?text=${encodeURIComponent(item.whatsappText)}" target="_blank" class="btn btn-primary btn-sm btn-green card-action-btn" title="Pošalji upit za uređaje">
                                 <i class="fa-brands fa-whatsapp"></i> ${isBs ? "Pitaj" : "Ask"}
