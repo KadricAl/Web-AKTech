@@ -233,6 +233,17 @@ window.AK_DATA = {
             description_bs: "Oficijelni vodič za zaštitu Windowsa: Core Isolation, Defender Tamper Protection, BitLocker, Passkeys, Sysinternals i 6 zlatnih pravila digitalne higijene.",
             description_en: "Official Windows security guide: Core Isolation, Defender Tamper Protection, BitLocker, Passkeys, Sysinternals, and 6 essential digital hygiene rules."
         },
+        {
+            id: "dl-doc-5",
+            category: "doc",
+            title: "Google Chrome: Napredni Savjeti, Prečice & Optimizacija",
+            type: "PDF Vodič",
+            fileSize: "812 KB",
+            version: "2026 Izdanje",
+            filePath: "downloads/chrome-tips-tricks-aktech.pdf",
+            description_bs: "Oficijelni AK Tech priručnik na 2 stranice: najvažnije tastaturne prečice, ušteda RAM memorije (Memory Saver), upravljanje grupama tabova, ubrzanje preuzimanja i 6 zlatnih pravila sigurnosti.",
+            description_en: "Official AK Tech 2-page Chrome power-user guide: essential shortcuts, Memory Saver tuning, tab groups, parallel download acceleration, and 6 security hygiene rules."
+        },
 
         // B. Aplikacije & ZIP Arhive
         {
