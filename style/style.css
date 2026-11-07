@@ -38,6 +38,13 @@
     --header-height: 80px;
 }
 
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+}
+
 html {
     scroll-behavior: smooth;
     font-size: 16px;
@@ -47,7 +54,6 @@ html {
 }
 
 body {
-    overflow-x: hidden;
     line-height: 1.6;
 }
 
@@ -439,11 +445,13 @@ body {
     display: flex;
     gap: 16px;
     margin-bottom: 40px;
+    flex-wrap: wrap;
 }
 
 .hero-socials {
     display: flex;
-    gap: 18px;
+    flex-wrap: wrap;
+    gap: 14px;
 }
 
 .social-icon-link {
@@ -1055,6 +1063,7 @@ body {
 
 .footer-social-links {
     display: flex;
+    flex-wrap: wrap;
     gap: 16px;
 }
 
@@ -1301,10 +1310,48 @@ body {
         --header-height: 70px;
     }
     .hero-title {
-        font-size: 2.6rem;
+        font-size: clamp(2rem, 7.5vw, 2.6rem);
+        word-break: break-word;
     }
     .hero-desc {
         font-size: 1rem;
+    }
+    
+    /* Cards grids mobile responsive stack */
+    .cards-grid-2,
+    .cards-grid-3,
+    .cards-grid-4,
+    .cards-grid-ai-small {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+
+    .portal-card {
+        padding: 24px 18px !important;
+        min-width: 0 !important;
+    }
+
+    .subpage-hero {
+        padding: 130px 0 50px !important;
+    }
+
+    .subpage-title {
+        font-size: clamp(1.8rem, 6.5vw, 2.3rem) !important;
+        line-height: 1.25 !important;
+        word-break: break-word !important;
+    }
+
+    .subpage-desc {
+        font-size: 0.98rem !important;
+    }
+
+    .tool-card-panel {
+        padding: 24px 16px !important;
+    }
+
+    .footer-social-links {
+        justify-content: center;
+        gap: 12px;
     }
     
     /* Card layouts */
@@ -1426,8 +1473,77 @@ body {
 }
 
 @media (max-width: 480px) {
+    .container {
+        padding: 0 16px !important;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero-socials {
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .hero-metrics-card {
+        padding: 20px 16px;
+    }
+
+    .service-content-card {
+        padding: 24px 16px;
+    }
+
+    .glass-card {
+        padding: 24px 16px !important;
+    }
+
+    .portal-card {
+        padding: 20px 14px !important;
+    }
+
+    .group-actions-grid,
+    .olx-actions-grid {
+        grid-template-columns: 1fr !important;
+        gap: 8px !important;
+    }
+
+    .group-price-row,
+    .olx-price-row {
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .card-action-btn {
+        white-space: normal !important;
+        text-align: center;
+        padding: 10px 12px !important;
+    }
+
+    .filter-tabs {
+        gap: 8px;
+        margin: 24px 0 32px;
+    }
+
+    .filter-btn {
+        padding: 8px 14px !important;
+        font-size: 0.84rem !important;
+    }
+
+    .tool-tab-btn {
+        padding: 10px 16px !important;
+        font-size: 0.88rem !important;
+    }
+
     .nav-container {
-        padding: 0 14px;
+        padding: 0 14px !important;
     }
     .logo-area {
         gap: 8px;
@@ -2536,6 +2652,7 @@ body {
     }
     .link-main-anchor {
         width: 100%;
+        min-width: 0;
     }
     .link-actions-group {
         width: 100%;
