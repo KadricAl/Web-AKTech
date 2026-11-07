@@ -289,6 +289,17 @@ window.AK_DATA = {
             filePath: "downloads/qr-code-generator-desktop.zip",
             description_bs: "Offline program za trenutno generisanje Wi-Fi i vCard QR kodova bez interneta.",
             description_en: "Standalone offline desktop generator for Wi-Fi configurations and high-resolution vCard QR codes."
+        },
+        {
+            id: "dl-app-5",
+            category: "app",
+            title: "AK Tech Mini Hardware & PC Health Check",
+            type: "Portable Aplikacija (ZIP)",
+            fileSize: "18.4 MB",
+            version: "v1.0 Portable",
+            filePath: "downloads/aktech-mini-pc-check.zip",
+            description_bs: "Samostalni prenosivi Windows alat za hardversku inspekciju: provjera CPU, RAM i diskova, automatska ocjena zdravlja računara (0-100) i korisnički vodič.",
+            description_en: "Standalone portable Windows diagnostic tool: CPU, RAM, and disk checks, automated PC Health Score (0-100), and included interactive user guide."
         }
     ],
 
