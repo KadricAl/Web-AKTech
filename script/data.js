@@ -186,7 +186,7 @@ window.AK_DATA = {
         }
     ],
 
-    // 5. Downloads (9 Dokumenata / PDF-a + 5 Aplikacija / ZIP)
+    // 5. Downloads (9 Dokumenata / PDF-a + 6 Aplikacija / ZIP)
     downloads: [
         // A. Dokumenti & PDF Vodiči
         {
@@ -344,6 +344,17 @@ window.AK_DATA = {
             filePath: "downloads/aktech-mini-pc-check.zip",
             description_bs: "Samostalni prenosivi Windows alat za hardversku inspekciju: provjera CPU, RAM i diskova, automatska ocjena zdravlja računara (0-100) i korisnički vodič.",
             description_en: "Standalone portable Windows diagnostic tool: CPU, RAM, and disk checks, automated PC Health Score (0-100), and included interactive user guide."
+        },
+        {
+            id: "dl-app-6",
+            category: "app",
+            title: "AK Tech Smart File Organizer",
+            type: "Portable Aplikacija (ZIP)",
+            fileSize: "18.4 MB",
+            version: "v1.0 Portable",
+            filePath: "downloads/aktech-file-organizer.zip",
+            description_bs: "Prenosivi alat za automatsko sortiranje foldera (Downloads, Desktop): 8 kategorija, Dry-Run pregled prije izmjena, zaštita prečica i 1-klik Undo vraćanje.",
+            description_en: "Portable Windows folder organizer (Downloads, Desktop): 8 smart categories, safe Dry-Run preview, shortcut protection, 1-click Undo restore, and user guide."
         }
     ],
 
