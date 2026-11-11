@@ -186,7 +186,7 @@ window.AK_DATA = {
         }
     ],
 
-    // 5. Downloads (5 Dokumenata / PDF-a + 5 Aplikacija / ZIP)
+    // 5. Downloads (9 Dokumenata / PDF-a + 5 Aplikacija / ZIP)
     downloads: [
         // A. Dokumenti & PDF Vodiči
         {
@@ -243,6 +243,50 @@ window.AK_DATA = {
             filePath: "downloads/chrome-tips-tricks-aktech.pdf",
             description_bs: "Oficijelni AK Tech priručnik na 2 stranice: najvažnije tastaturne prečice, ušteda RAM memorije (Memory Saver), upravljanje grupama tabova, ubrzanje preuzimanja i 6 zlatnih pravila sigurnosti.",
             description_en: "Official AK Tech 2-page Chrome power-user guide: essential shortcuts, Memory Saver tuning, tab groups, parallel download acceleration, and 6 security hygiene rules."
+        },
+        {
+            id: "dl-doc-6",
+            category: "doc",
+            title: "Excel: Ključne Prečice & Funkcije",
+            type: "PDF Priručnik",
+            fileSize: "793 KB",
+            version: "2026 Izdanje",
+            filePath: "downloads/excel-tips-tricks-aktech.pdf",
+            description_bs: "Praktični AK Tech vodič na 2 stranice: najkorištenije tastaturne prečice, SUM/IF/XLOOKUP/SUMIF formule, Pivot tabele za 30 sekundi i 6 zlatnih pravila za Excel.",
+            description_en: "Practical 2-page AK Tech Excel guide: must-know shortcuts, SUM/IF/XLOOKUP/SUMIF formulas, 30-second Pivot Tables, error codes, and 6 spreadsheet best practices."
+        },
+        {
+            id: "dl-doc-7",
+            category: "doc",
+            title: "Baterija & Punjač Mobitela: Vodič",
+            type: "PDF Vodič",
+            fileSize: "667 KB",
+            version: "2026 Izdanje",
+            filePath: "downloads/baterija-punjac-mobitela-aktech.pdf",
+            description_bs: "AK Tech priručnik na 2 stranice za iPhone i Android: zona punjenja 20–80%, zaštita od pregrijavanja, USB-C PD/PPS/GaN punjači, čišćenje porta i mitovi vs. istina.",
+            description_en: "2-page AK Tech mobile battery care handbook (iOS & Android): 20–80% charging rule, heat protection, USB-C PD/GaN chargers, port cleaning, and charging myths."
+        },
+        {
+            id: "dl-doc-8",
+            category: "doc",
+            title: "Linux: Terminal Prečice & Trikovi",
+            type: "PDF Priručnik",
+            fileSize: "1.12 MB",
+            version: "2026 Izdanje",
+            filePath: "downloads/linux-tips-tricks-aktech.pdf",
+            description_bs: "Oficijelni AK Tech vodič na 2 stranice: Bash/Zsh prečice, pretraga s grep/find, disk i RAM dijagnostika, systemd servisi, chmod, ~/.bashrc aliasi i sigurnost.",
+            description_en: "Official 2-page AK Tech Linux guide: Bash/Zsh shortcuts, grep/find search, disk and RAM diagnostics, systemd services, chmod permissions, and ~/.bashrc aliases."
+        },
+        {
+            id: "dl-doc-9",
+            category: "doc",
+            title: "ChatGPT: Promptovi za Svaki Dan",
+            type: "PDF Cheat Sheet",
+            fileSize: "658 KB",
+            version: "2026 Izdanje",
+            filePath: "downloads/chatgpt-promptovi-aktech.pdf",
+            description_bs: "Kompaktni vodič na 1 stranici: formula savršenog prompta, 8 gotovih AI kodova za emailove, Excel, sažetke, učenje i debug koda, uz 3 pravila sigurnosti.",
+            description_en: "Compact 1-page ChatGPT cheat sheet: the 4-pillar prompt formula, 8 copy-paste daily prompts for emails, Excel, summaries, study plans, and debugging."
         },
 
         // B. Aplikacije & ZIP Arhive
