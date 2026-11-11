@@ -186,7 +186,7 @@ window.AK_DATA = {
         }
     ],
 
-    // 5. Downloads (4 Dokumenta / PDF-a + 4 Aplikacije / ZIP)
+    // 5. Downloads (5 Dokumenata / PDF-a + 5 Aplikacija / ZIP)
     downloads: [
         // A. Dokumenti & PDF Vodiči
         {
@@ -214,13 +214,13 @@ window.AK_DATA = {
         {
             id: "dl-doc-3",
             category: "doc",
-            title: "Priručnik za prepoznavanje hardverskih kvarova",
-            type: "PDF Dokument",
-            fileSize: "2.8 MB",
-            version: "v1.2",
-            filePath: "downloads/hardware-dijagnostika-kvarova.pdf",
-            description_bs: "Kako prepoznati kvar napajanja, matične ploče ili memorije prije odlaska u servis.",
-            description_en: "Diagnostic checklist for isolating motherboard, power supply, and RAM instability symptoms."
+            title: "Baterija Laptopa: Vodič za Dug Vijek",
+            type: "PDF Priručnik",
+            fileSize: "682 KB",
+            version: "2026 Izdanje",
+            filePath: "downloads/vodic-baterija-laptopa-aktech.pdf",
+            description_bs: "Kratki AK Tech vodič na 2 stranice: pravilo punjenja 20–80%, zaštita od pregrijavanja, 80% limit po brendovima, Windows dijagnostika baterije i 6 zlatnih pravila.",
+            description_en: "Concise 2-page AK Tech battery care handbook: 20–80% charging sweet spot, thermal protection, OEM 80% charge limits, Windows battery report, and 6 longevity rules."
         },
         {
             id: "dl-doc-4",
